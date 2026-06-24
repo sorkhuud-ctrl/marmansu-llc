@@ -1,0 +1,43 @@
+{
+  "motion_level": 1,
+  "visual_direction": "japanese-corporate-premium",
+  "packages": [
+    "framer-motion",
+    "clsx",
+    "tailwind-merge",
+    "lucide-react",
+    "next-themes"
+  ],
+  "shadcn_components": [
+    "button",
+    "card",
+    "input",
+    "textarea",
+    "separator"
+  ],
+  "custom_components": [
+    "Header",
+    "Footer",
+    "SectionHeading",
+    "HeroSection",
+    "StatsSection",
+    "ServiceCard",
+    "ProductCard",
+    "ProjectCard",
+    "PartnerRow",
+    "NewsCard",
+    "ContactForm",
+    "PageHero",
+    "LanguageSwitcher",
+    "MobileMenu"
+  ],
+  "animation_config": {
+    "core_library": "framer-motion",
+    "scroll_library": "none",
+    "text_animation": "none",
+    "page_transition": "none",
+    "ambient_system": "css",
+    "micro_interactions": "framer-motion",
+    "gsap_plugins": []
+  }
+}
