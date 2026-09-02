@@ -19,7 +19,7 @@ export function HeroSection() {
     <section className="w-full bg-background">
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 xl:px-12 py-20 lg:py-28">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <FadeIn direction="up" className="order-2 lg:order-1">
+          <FadeIn direction="up" immediate>
             <div className="space-y-6">
               <p className="text-xs font-semibold tracking-[0.15em] text-gold uppercase">
                 {t("label")}
@@ -47,7 +47,7 @@ export function HeroSection() {
             </div>
           </FadeIn>
 
-          <FadeIn direction="left" delay={0.1} className="order-1 lg:order-2">
+          <FadeIn direction="left" immediate>
             <div className="relative bg-secondary rounded-xl p-8 lg:p-10 shadow-soft">
               <p className="text-xs font-semibold tracking-[0.15em] text-gold uppercase text-center mb-8">
                 JAPAN · MONGOLIA
@@ -74,7 +74,7 @@ export function HeroSection() {
           </FadeIn>
         </div>
 
-        <FadeIn direction="up" delay={0.2}>
+        <FadeIn direction="up" immediate>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 lg:pt-20 border-t border-border mt-16 lg:mt-20">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center md:text-left">
