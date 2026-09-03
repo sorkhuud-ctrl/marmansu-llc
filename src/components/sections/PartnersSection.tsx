@@ -31,7 +31,7 @@ export function PartnersSection() {
               <motion.div
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.25 }}
-                className="bg-white rounded-lg p-7 shadow-card hover:shadow-card-hover transition-shadow"
+                className="bg-white rounded-md p-7 shadow-sm hover:shadow transition-shadow"
               >
                 <h3 className="text-base font-semibold text-navy mb-2">
                   {t(`partner.${partner.key}.title`)}

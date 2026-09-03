@@ -11,12 +11,8 @@ export function AboutSection() {
   return (
     <section className="w-full bg-secondary">
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 xl:px-12 py-20 lg:py-28">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+        <div className="mx-auto max-w-3xl">
           <FadeIn direction="up">
-            <div className="aspect-[4/3] bg-muted rounded-xl" />
-          </FadeIn>
-
-          <FadeIn direction="up" delay={0.1}>
             <div className="space-y-6">
               <SectionHeading
                 label={t("label")}

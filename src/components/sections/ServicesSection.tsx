@@ -1,18 +1,13 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { Package, Stethoscope, ClipboardCheck, GraduationCap, Handshake } from "lucide-react";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { SectionHeading } from "@/components/SectionHeading";
-import { cn } from "@/lib/utils";
 
-const services = [
-  { key: "pharmaceutical", icon: Package },
-  { key: "medicalDevices", icon: Stethoscope },
-  { key: "regulatory", icon: ClipboardCheck },
-  { key: "education", icon: GraduationCap },
-  { key: "partnerships", icon: Handshake },
+const serviceKeys = [
+  "distribution",
+  "regulatory",
+  "education"
 ];
 
 export function ServicesSection() {
@@ -29,29 +24,21 @@ export function ServicesSection() {
           />
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <FadeIn key={service.key} direction="up" delay={index * 0.05}>
-                <motion.div
-                  whileHover={{ y: -4 }}
-                  transition={{ duration: 0.25 }}
-                  className="bg-white rounded-lg p-8 shadow-card hover:shadow-card-hover transition-shadow"
-                >
-                  <div className="w-12 h-12 rounded bg-secondary flex items-center justify-center mb-5">
-                    <Icon className="w-5 h-5 text-navy" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-navy mb-2">
-                    {t(`service.${service.key}.title`)}
+        <div className="mt-16 lg:mt-20">
+          <div className="grid lg:grid-cols-3 gap-0 lg:gap-12">
+            {serviceKeys.map((service, index) => (
+              <FadeIn key={service} direction="up" delay={index * 0.05}>
+                <div className="pb-8 lg:pb-0 border-b lg:border-b-0">
+                  <h3 className="text-base font-semibold text-navy mb-4">
+                    {t(`service.${service}.title`)}
                   </h3>
                   <p className="text-sm text-muted-foreground leading-relaxed">
-                    {t(`service.${service.key}.description`)}
+                    {t(`service.${service}.description`)}
                   </p>
-                </motion.div>
+                </div>
               </FadeIn>
-            );
-          })}
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -25,7 +25,7 @@
   "services": {
     "label": "OUR SERVICES",
     "title": "What We Do",
-    "description": "We provide end-to-end support for Japanese healthcare companies entering Mongolia and for Mongolian institutions seeking trusted medical solutions."
+    "description": "Connecting Japanese healthcare expertise with opportunities in Mongolia."
   },
   "products": {
     "label": "PRODUCTS",
@@ -42,6 +42,50 @@
     "title": "Trusted Collaborations",
     "description": "We build professional networks across Japanese healthcare companies, academic institutions, and Mongolian healthcare organizations."
   },
+  "education": {
+    "label": "PROFESSIONAL DEVELOPMENT",
+    "title": "From Japanese Expertise to Clinical Practice",
+    "description": "MARMANSU connects Japanese clinical expertise with Mongolian healthcare professionals through structured education, hands-on training, and continued knowledge exchange.",
+    "concept": {
+      "clinical": {
+        "title": "Clinical Education",
+        "description": "Training led by experienced Japanese healthcare professionals."
+      },
+      "handson": {
+        "title": "Hands-on Learning",
+        "description": "Practical learning designed to support real clinical practice."
+      },
+      "longterm": {
+        "title": "Long-term Knowledge Exchange",
+        "description": "Building lasting professional relationships beyond individual seminars."
+      }
+    }
+  },
+  "cooperation": {
+    "label": "JAPAN–MONGOLIA COOPERATION",
+    "title": "Building Healthcare Connections Between Japan and Mongolia",
+    "description": "MARMANSU works to build meaningful connections between Japanese healthcare expertise and Mongolia's evolving healthcare needs.",
+    "theme": {
+      "industry": {
+        "title": "Industry Partnerships",
+        "description": "Connecting Japanese medical and dental companies with opportunities for sustainable market development in Mongolia."
+      },
+      "clinical": {
+        "title": "Clinical & Academic Exchange",
+        "description": "Supporting professional exchange between Japanese experts and Mongolian healthcare institutions."
+      },
+      "longterm": {
+        "title": "Long-term Collaboration",
+        "description": "Developing relationships that extend beyond product supply through education, knowledge exchange, and continued cooperation."
+      }
+    }
+  },
+  "partnership": {
+    "label": "PARTNERSHIP",
+    "title": "Looking to Build Your Presence in Mongolia?",
+    "description": "MARMANSU works with Japanese healthcare companies seeking to enter and develop the Mongolian market. From local coordination and regulatory support to distribution and long-term market development, we work alongside our partners to build a sustainable presence in Mongolia.",
+    "cta": "Partnership Inquiry"
+  },
   "news": {
     "label": "NEWS & UPDATES",
     "title": "Latest from MARMANSU",
@@ -54,7 +98,10 @@
   },
   "contact": {
     "label": "CONTACT",
-    "title": "Get in Touch",
+    "title": "Let's Connect",
+    "intro": "For product inquiries, partnership opportunities, and professional collaboration, please contact MARMANSU.",
+    "address": "Address",
+    "addressContent": "Ulaanbaatar, Bayangol District, 16th Khoroo, Khuslen Center 202",
     "description": "We welcome inquiries from Japanese healthcare companies, Mongolian healthcare institutions, and strategic partners.",
     "fullName": "Full Name",
     "company": "Company / Organization",
@@ -62,7 +109,6 @@
     "phone": "Phone Number",
     "message": "Message",
     "submit": "Send Message",
-    "address": "Address",
     "emailLabel": "Email",
     "phoneLabel": "Phone"
   },
@@ -73,25 +119,17 @@
     "partnership": "We believe collaboration creates stronger healthcare outcomes."
   },
   "service": {
-    "pharmaceutical": {
-      "title": "Pharmaceutical Distribution",
-      "description": "Import and distribution of high-quality Japanese healthcare products."
-    },
-    "medicalDevices": {
-      "title": "Medical Devices & Dental",
-      "description": "Supply of medical devices, dental materials, and related technologies."
+    "distribution": {
+      "title": "Distribution & Market Development",
+      "description": "We introduce selected Japanese medical and dental solutions to Mongolia and support their long-term market development."
     },
     "regulatory": {
-      "title": "Regulatory Support",
-      "description": "Product registration, licensing, and market access support."
+      "title": "Regulatory & Market Entry Support",
+      "description": "We support Japanese healthcare companies with product registration, import coordination, and market entry in Mongolia."
     },
     "education": {
-      "title": "Medical Education",
-      "description": "Seminars, workshops, clinical training, and academic exchanges."
-    },
-    "partnerships": {
-      "title": "Strategic Partnerships",
-      "description": "Long-term partnerships between Japanese companies and Mongolian institutions."
+      "title": "Professional Education & Clinical Training",
+      "description": "We connect Japanese expertise with Mongolian healthcare professionals through training, seminars, and clinical knowledge exchange."
     }
   },
   "product": {

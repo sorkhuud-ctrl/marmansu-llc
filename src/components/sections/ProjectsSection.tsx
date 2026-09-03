@@ -32,7 +32,7 @@ export function ProjectsSection() {
               <motion.div
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.25 }}
-                className="flex bg-white rounded-lg overflow-hidden shadow-card hover:shadow-card-hover transition-shadow"
+                className="flex bg-white rounded-md overflow-hidden shadow-sm hover:shadow transition-shadow"
               >
                 <div className="w-32 md:w-44 bg-muted flex-shrink-0" />
                 <div className="p-6 md:p-8 flex flex-col justify-center">

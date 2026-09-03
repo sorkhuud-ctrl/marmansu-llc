@@ -5,85 +5,65 @@ import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 import { FadeIn } from "@/components/motion/FadeIn";
 
-const stats = [
-  { value: "2024", label: "Founded" },
-  { value: "3+", label: "Japanese Partners" },
-  { value: "5", label: "Core Services" },
-  { value: "MN | JP", label: "Markets" },
-];
-
 export function HeroSection() {
   const t = useTranslations("hero");
 
   return (
     <section className="w-full bg-background">
-      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 xl:px-12 py-20 lg:py-28">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 xl:px-12 py-24 lg:py-32">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
           <FadeIn direction="up" immediate>
-            <div className="space-y-6">
-              <p className="text-xs font-semibold tracking-[0.15em] text-gold uppercase">
-                {t("label")}
+            <div className="space-y-8">
+              <p className="text-xs font-semibold tracking-[0.15em] text-accent uppercase">
+                              JAPAN–MONGOLIA HEALTHCARE BRIDGE
               </p>
-              <h1 className="text-5xl md:text-6xl lg:text-7xl font-semibold text-navy leading-[1.1]">
-                {t("title")}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-navy leading-[1.08]">
+                              Connecting Japanese Healthcare with Mongolia
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
-                {t("subtitle")}
+                              MARMANSU connects trusted Japanese medical and dental technologies with Mongolian healthcare through distribution, professional education, and long-term partnership.
               </p>
-              <div className="flex flex-wrap gap-4 pt-2">
+              <div className="flex flex-wrap gap-4 pt-4">
                 <Link
                   href="/services"
-                  className="inline-flex items-center justify-center rounded bg-navy px-7 py-3.5 text-sm font-medium text-white hover:bg-navy-light transition-colors"
+                  className="inline-flex items-center justify-center rounded-sm bg-navy px-6 py-2.5 text-sm font-medium text-white hover:bg-navy-light transition-colors"
                 >
-                  {t("exploreServices")}
+                                Explore Our Solutions
                 </Link>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center rounded border border-navy px-7 py-3.5 text-sm font-medium text-navy hover:bg-navy/5 transition-colors"
+                  className="inline-flex items-center justify-center rounded-sm border border-navy px-6 py-2.5 text-sm font-medium text-navy hover:bg-navy/5 transition-colors"
                 >
-                  {t("contactUs")}
+                                Discover AQB Implant
                 </Link>
               </div>
             </div>
           </FadeIn>
 
           <FadeIn direction="left" immediate>
-            <div className="relative bg-secondary rounded-xl p-8 lg:p-10 shadow-soft">
-              <p className="text-xs font-semibold tracking-[0.15em] text-gold uppercase text-center mb-8">
+            <div className="relative bg-background p-6 lg:p-8">
+              <p className="text-xs font-semibold tracking-[0.15em] text-accent uppercase text-center mb-6">
                 JAPAN · MONGOLIA
               </p>
-              <div className="flex items-center justify-center gap-4">
-                <div className="bg-white rounded-lg px-6 py-5 text-center shadow-card min-w-[120px]">
+
+              <div className="flex items-stretch justify-center gap-8">
+                <div className="min-w-[140px] pr-6 text-center border-r border-border">
                   <p className="text-sm font-semibold text-navy">JAPAN</p>
                   <p className="text-xs text-muted-foreground mt-1">Quality · Innovation · Trust</p>
                 </div>
-                <div className="flex items-center gap-2">
-                  <div className="w-16 h-0.5 bg-gold" />
-                  <div className="w-3 h-3 rounded-full bg-navy" />
-                  <div className="w-16 h-0.5 bg-gold" />
-                </div>
-                <div className="bg-white rounded-lg px-6 py-5 text-center shadow-card min-w-[120px]">
+
+                <div className="min-w-[140px] pl-6 text-center">
                   <p className="text-sm font-semibold text-navy">MONGOLIA</p>
                   <p className="text-xs text-muted-foreground mt-1">Growth · Partnership · Care</p>
                 </div>
               </div>
+
               <p className="text-sm text-muted-foreground text-center mt-8">
                 Connecting quality healthcare across borders
               </p>
             </div>
           </FadeIn>
         </div>
-
-        <FadeIn direction="up" immediate>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 lg:pt-20 border-t border-border mt-16 lg:mt-20">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center md:text-left">
-                <p className="text-3xl md:text-4xl font-semibold text-navy">{stat.value}</p>
-                <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </FadeIn>
       </div>
     </section>
   );

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Inter, JetBrains_Mono, Noto_Sans_JP } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import ApolloClientProvider from "@/lib/apollo/provider";
 import "../globals.css";
@@ -27,6 +27,11 @@ const inter = Inter({
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
+});
+
+const noto = Noto_Sans_JP({
+  variable: "--font-noto",
+  subsets: ["latin", "japanese"],
 });
 
 export const metadata: Metadata = {
@@ -60,7 +65,7 @@ export default async function LocaleLayout({
   return (
     <html
       lang={locale}
-      className={`${inter.variable} ${jetbrainsMono.variable} h-full antialiased`}
+        className={`${inter.variable} ${jetbrainsMono.variable} ${noto.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col font-sans">
         <NextIntlClientProvider locale={locale} messages={messages}>
