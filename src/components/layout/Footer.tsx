@@ -19,43 +19,79 @@ export function Footer({ items }: { items?: FooterItem[] }) {
         .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
         .map((item) => ({ key: item._id, label: item.label, href: item.url }))
     : [
+        { key: "home", label: t("nav.home"), href: "/" },
         { key: "about", label: t("nav.about"), href: "/about" },
         { key: "services", label: t("nav.services"), href: "/services" },
         { key: "products", label: t("nav.products"), href: "/products" },
         { key: "projects", label: t("nav.projects"), href: "/projects" },
+        { key: "partners", label: t("nav.partners"), href: "/partners" },
+        { key: "news", label: t("nav.news"), href: "/news" },
         { key: "contact", label: t("nav.contact"), href: "/contact" },
       ];
 
   return (
-    <footer className="w-full bg-navy-dark text-white">
-      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 xl:px-12 py-12">
-        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
-          <div className="text-xl font-semibold tracking-[0.1em]">MARMANSU</div>
-          <nav className="flex flex-wrap gap-6 text-sm text-white/70">
-            {footerLinks.map((item) => (
-              <Link
-                key={item.key}
-                href={item.href}
-                className="hover:text-white transition-colors"
-              >
-                {item.label}
-              </Link>
-            ))}
-          </nav>
+    <footer className="w-full bg-navy text-white">
+      <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 xl:px-12 py-16 lg:py-20">
+        <div className="grid md:grid-cols-2 gap-12 mb-12">
+          <div>
+            <div className="text-lg font-semibold tracking-[0.08em] mb-2">MARMANSU</div>
+            <p className="text-sm text-white/70 leading-relaxed">
+              Connecting Japanese Healthcare with Mongolia
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 gap-8">
+            <div>
+              <h4 className="text-xs font-semibold uppercase text-white mb-4">Navigation</h4>
+              <nav className="space-y-2">
+                {footerLinks.map((item) => (
+                  <Link
+                    key={item.key}
+                    href={item.href}
+                    className="text-sm text-white/70 hover:text-white transition-colors block"
+                  >
+                    {item.label}
+                  </Link>
+                ))}
+              </nav>
+            </div>
+
+            <div>
+              <h4 className="text-xs font-semibold uppercase text-white mb-4">Contact</h4>
+              <div className="space-y-2">
+                <div className="text-sm text-white/70">
+                  <a
+                    href="tel:+976-77182255"
+                    className="hover:text-white transition-colors"
+                  >
+                    7718 2255
+                  </a>
+                  <span>, </span>
+                  <a
+                    href="tel:+976-99440974"
+                    className="hover:text-white transition-colors"
+                  >
+                    9944 0974
+                  </a>
+                </div>
+                <a
+                  href="mailto:marmansullc@gmail.com"
+                  className="text-sm text-white/70 hover:text-white transition-colors block"
+                >
+                  marmansullc@gmail.com
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="mt-10 pt-8 border-t border-white/10 flex flex-col md:flex-row md:items-center md:justify-between gap-4 text-sm text-white/60">
-          <p>© {new Date().getFullYear()} MARMANSU LLC. {t("footer.rights")}.</p>
-          <nav className="flex gap-6">
-            <Link href="/privacy-policy" className="hover:text-white transition-colors">
-              {t("footer.privacy")}
-            </Link>
-            <Link href="/terms-of-use" className="hover:text-white transition-colors">
-              {t("footer.terms")}
-            </Link>
-          </nav>
+        <div className="pt-8 border-t border-white/10">
+          <p className="text-sm text-white/60">
+            © {new Date().getFullYear()} MARMANSU LLC. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
   );
 }
+

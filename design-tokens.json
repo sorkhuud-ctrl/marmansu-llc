@@ -8,43 +8,43 @@
   },
   "colors": {
     "brand": {
-      "navy": "#1a2f4a",
-      "navyDark": "#0f1c2d",
-      "navyLight": "#2a4566",
-      "gold": "#c9b896",
-      "goldLight": "#e8dfcc"
+      "navy": "#1A2F4A",
+      "navyDark": "#0F1C2D",
+      "navyLight": "#2A4566",
+      "gold": "#6EA88A",
+      "goldLight": "#E9F3EB"
     },
     "neutral": {
-      "white": "#ffffff",
-      "gray50": "#f8f9fa",
-      "gray100": "#f1f3f5",
-      "gray200": "#e9ecef",
-      "gray400": "#adb5bd",
-      "gray600": "#6c757d",
-      "gray800": "#343a40",
+      "white": "#FFFFFF",
+      "gray50": "#F7F8F9",
+      "gray100": "#F1F3F5",
+      "gray200": "#E9ECEF",
+      "gray400": "#ADB5BD",
+      "gray600": "#6C757D",
+      "gray800": "#343A40",
       "gray900": "#212529"
     },
     "semantic": {
-      "background": "#ffffff",
-      "foreground": "#1a2f4a",
-      "card": "#ffffff",
-      "cardForeground": "#1a2f4a",
-      "popover": "#ffffff",
-      "popoverForeground": "#1a2f4a",
-      "primary": "#1a2f4a",
-      "primaryForeground": "#ffffff",
-      "secondary": "#f8f9fa",
-      "secondaryForeground": "#1a2f4a",
-      "muted": "#f1f3f5",
-      "mutedForeground": "#6c757d",
-      "accent": "#c9b896",
-      "accentForeground": "#1a2f4a",
-      "border": "#e9ecef",
-      "input": "#e9ecef",
-      "ring": "#c9b896",
-      "success": "#2f855a",
-      "warning": "#d69e2e",
-      "destructive": "#c53030"
+      "background": "#FFFFFF",
+      "foreground": "#1A2F4A",
+      "card": "#FFFFFF",
+      "cardForeground": "#1A2F4A",
+      "popover": "#FFFFFF",
+      "popoverForeground": "#1A2F4A",
+      "primary": "#1A2F4A",
+      "primaryForeground": "#FFFFFF",
+      "secondary": "#F7F8F9",
+      "secondaryForeground": "#1A2F4A",
+      "muted": "#F1F3F5",
+      "mutedForeground": "#6C757D",
+      "accent": "#6EA88A",
+      "accentForeground": "#1A2F4A",
+      "border": "#E9ECEF",
+      "input": "#E9ECEF",
+      "ring": "#6EA88A",
+      "success": "#2F855A",
+      "warning": "#D69E2E",
+      "destructive": "#C53030"
     }
   },
   "typography": {
@@ -65,9 +65,9 @@
       "3xl": 24,
       "4xl": 28,
       "5xl": 36,
-      "6xl": 52,
-      "7xl": 64,
-      "8xl": 72
+      "6xl": 40,
+      "7xl": 48,
+      "8xl": 56
     },
     "lineHeight": {
       "tight": 1.1,
@@ -106,7 +106,7 @@
     "layout": {
       "pageMaxWidth": 1280,
       "contentPadding": [16, 24, 32, 48, 64, 80, 96, 120],
-      "sectionGap": 96,
+      "sectionGap": 112,
       "containerPadding": 120
     }
   },
@@ -118,10 +118,10 @@
     "full": 9999
   },
   "shadows": {
-    "card": "0 2px 8px rgba(26,47,74,0.06)",
-    "cardHover": "0 8px 24px rgba(26,47,74,0.10)",
-    "soft": "0 4px 16px rgba(26,47,74,0.08)",
-    "hero": "0 8px 32px rgba(26,47,74,0.12)"
+    "card": "0 2px 8px rgba(26,47,74,0.05)",
+    "cardHover": "0 8px 24px rgba(26,47,74,0.08)",
+    "soft": "0 4px 12px rgba(26,47,74,0.06)",
+    "hero": "0 8px 24px rgba(26,47,74,0.08)"
   },
   "motion": {
     "duration": {
@@ -151,8 +151,8 @@
         "animate": { "transition": { "staggerChildren": 0.1 } }
       },
       "cardHover": {
-        "rest": { "y": 0, "boxShadow": "0 2px 8px rgba(26,47,74,0.06)" },
-        "hover": { "y": -4, "boxShadow": "0 8px 24px rgba(26,47,74,0.10)" },
+        "rest": { "y": 0, "boxShadow": "0 2px 8px rgba(26,47,74,0.05)" },
+        "hover": { "y": -4, "boxShadow": "0 8px 24px rgba(26,47,74,0.08)" },
         "transition": { "duration": 0.25, "ease": "easeOut" }
       },
       "buttonHover": {
