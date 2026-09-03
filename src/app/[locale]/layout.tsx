@@ -31,7 +31,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 const noto = Noto_Sans_JP({
   variable: "--font-noto",
-  subsets: ["latin", "japanese"],
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
