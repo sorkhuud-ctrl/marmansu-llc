@@ -14,7 +14,14 @@
     "title": "More Than Products",
     "subtitle": "日本とモンゴルの間で、信頼、知識、そして長期的な医療パートナーシップを届けます。",
     "exploreServices": "サービスを見る",
-    "contactUs": "お問い合わせ"
+    "contactUs": "お問い合わせ",
+    "discoverAqb": "AQBインプラントを見る",
+    "japanMongolia": "日本 · モンゴル",
+    "japan": "日本",
+    "japanValues": "品質 · イノベーション · 信頼",
+    "mongolia": "モンゴル",
+    "mongoliaValues": "成長 · パートナーシップ · ケア",
+    "connectingMessage": "質の高い医療をボーダーレスに結びつける"
   },
   "about": {
     "label": "MARMANSUについて",
@@ -31,6 +38,16 @@
     "label": "製品",
     "title": "高品質な医療製品",
     "description": "価格や技術仕様ではなく、品質、安全性、日本の基準を最重視しています。"
+  },
+  "dentalSolutions": {
+    "label": "日本の歯科ソリューション",
+    "title": "歯科材料・機器",
+    "description": "モダン歯科診療のための日本のソリューション。",
+    "body": "MARMANSUはモンゴルで厳選した日本の歯科材料を供給し、臨床的ニーズと医療機関の要件に応じた専門的な歯科機器の調達をサポートしています。",
+    "explore": "歯科ソリューションを見る",
+    "featuredMaterials": "厳選された歯科材料",
+    "equipment": "歯科機器",
+    "equipmentDescription": "臨床的ニーズと医療機関の要件に応じて供給される、専門的な日本の歯科機器。"
   },
   "projects": {
     "label": "プロジェクト & 事例",

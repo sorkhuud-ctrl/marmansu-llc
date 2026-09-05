@@ -1,10 +1,13 @@
 "use client";
 
 import { Link } from "@/i18n/routing";
+import { useTranslations } from "next-intl";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { SectionHeading } from "@/components/SectionHeading";
 
 export function DentalSolutionsSection() {
+  const t = useTranslations("dentalSolutions");
+
   return (
     <section className="w-full bg-secondary">
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 xl:px-12 py-20 lg:py-28">
@@ -12,13 +15,13 @@ export function DentalSolutionsSection() {
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
             <div>
               <SectionHeading
-                label="JAPANESE DENTAL SOLUTIONS"
-                title="Dental Materials & Equipment"
-                description="Japanese solutions for modern dental practice."
+                label={t("label")}
+                title={t("title")}
+                description={t("description")}
               />
 
               <p className="mt-6 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
-                MARMANSU supplies selected Japanese dental materials in Mongolia and supports the sourcing of professional dental equipment according to clinical and institutional needs.
+                {t("body")}
               </p>
 
               <div className="mt-8">
@@ -26,14 +29,14 @@ export function DentalSolutionsSection() {
                   href="/products"
                   className="inline-flex items-center rounded-sm border border-navy px-6 py-2 text-sm font-medium text-navy hover:bg-navy/5 transition-colors"
                 >
-                  Explore Dental Solutions
+                  {t("explore")}
                 </Link>
               </div>
             </div>
 
             <div>
               <div className="max-w-xl">
-                <p className="text-sm font-semibold text-muted-foreground mb-4">Featured dental materials</p>
+                <p className="text-sm font-semibold text-muted-foreground mb-4">{t("featuredMaterials")}</p>
                 <div className="border-t border-border">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 items-center py-6">
                     <div className="min-w-[88px] min-h-[88px] md:min-w-[120px] md:min-h-[120px] flex items-center justify-center">
@@ -64,8 +67,8 @@ export function DentalSolutionsSection() {
                 </div>
 
                 <div className="mt-8 pt-6 border-t border-border">
-                  <p className="text-sm font-semibold text-navy">Dental Equipment</p>
-                  <p className="text-sm text-muted-foreground mt-2">Professional Japanese dental equipment supplied according to clinical and institutional requirements.</p>
+                  <p className="text-sm font-semibold text-navy">{t("equipment")}</p>
+                  <p className="text-sm text-muted-foreground mt-2">{t("equipmentDescription")}</p>
                 </div>
               </div>
             </div>

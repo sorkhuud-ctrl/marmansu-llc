@@ -15,26 +15,26 @@ export function HeroSection() {
           <FadeIn direction="up" immediate>
             <div className="space-y-8">
               <p className="text-xs font-semibold tracking-[0.15em] text-accent uppercase">
-                              JAPAN–MONGOLIA HEALTHCARE BRIDGE
+               {t("label")}
               </p>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-semibold text-navy leading-[1.08]">
-                              Connecting Japanese Healthcare with Mongolia
+               {t("title")}
               </h1>
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl">
-                              MARMANSU connects trusted Japanese medical and dental technologies with Mongolian healthcare through distribution, professional education, and long-term partnership.
+               {t("subtitle")}
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
                 <Link
                   href="/services"
                   className="inline-flex items-center justify-center rounded-sm bg-navy px-6 py-2.5 text-sm font-medium text-white hover:bg-navy-light transition-colors"
                 >
-                                Explore Our Solutions
+                  {t("exploreServices")}
                 </Link>
                 <Link
                   href="/aqb"
                   className="inline-flex items-center justify-center rounded-sm border border-navy px-6 py-2.5 text-sm font-medium text-navy hover:bg-navy/5 transition-colors"
                 >
-                                Discover AQB Implant
+                  {t("discoverAqb")}
                 </Link>
               </div>
             </div>
@@ -43,23 +43,23 @@ export function HeroSection() {
           <FadeIn direction="left" immediate>
             <div className="relative bg-background p-6 lg:p-8">
               <p className="text-xs font-semibold tracking-[0.15em] text-accent uppercase text-center mb-6">
-                JAPAN · MONGOLIA
+                {t("japanMongolia")}
               </p>
 
               <div className="flex items-stretch justify-center gap-8">
                 <div className="min-w-[140px] pr-6 text-center border-r border-border">
-                  <p className="text-sm font-semibold text-navy">JAPAN</p>
-                  <p className="text-xs text-muted-foreground mt-1">Quality · Innovation · Trust</p>
+                  <p className="text-sm font-semibold text-navy">{t("japan")}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{t("japanValues")}</p>
                 </div>
 
                 <div className="min-w-[140px] pl-6 text-center">
-                  <p className="text-sm font-semibold text-navy">MONGOLIA</p>
-                  <p className="text-xs text-muted-foreground mt-1">Growth · Partnership · Care</p>
+                  <p className="text-sm font-semibold text-navy">{t("mongolia")}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{t("mongoliaValues")}</p>
                 </div>
               </div>
 
               <p className="text-sm text-muted-foreground text-center mt-8">
-                Connecting quality healthcare across borders
+                {t("connectingMessage")}
               </p>
             </div>
           </FadeIn>
