@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { SectionHeading } from "@/components/SectionHeading";
@@ -14,6 +14,7 @@ const products = [
 ];
 
 export function ProductsSection() {
+  const locale = useLocale();
   const t = useTranslations();
 
   return (
@@ -41,7 +42,9 @@ export function ProductsSection() {
                 <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                   {t(`product.${product.key}.description`)}
                 </p>
-                <span className="text-sm font-medium text-navy">Learn more →</span>
+                <span className="text-sm font-medium text-navy">
+                  {locale === "mn" || locale === "ja" ? t("products.learnMore") : "Learn more"} →
+                </span>
               </motion.div>
             </FadeIn>
           ))}

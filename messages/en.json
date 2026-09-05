@@ -147,6 +147,18 @@
     "education": {
       "title": "Professional Education & Clinical Training",
       "description": "We connect Japanese expertise with Mongolian healthcare professionals through training, seminars, and clinical knowledge exchange."
+    },
+    "pharmaceutical": {
+      "title": "Pharmaceutical Distribution",
+      "description": "Import and distribution of high-quality Japanese healthcare products."
+    },
+    "medicalDevices": {
+      "title": "Medical Devices & Dental",
+      "description": "Supply of medical devices, dental materials, and related technologies."
+    },
+    "partnerships": {
+      "title": "Strategic Partnerships",
+      "description": "Long-term partnerships between Japanese companies and Mongolian institutions."
     }
   },
   "product": {

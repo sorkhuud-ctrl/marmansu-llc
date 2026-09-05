@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono, Noto_Sans_JP } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import ApolloClientProvider from "@/lib/apollo/provider";
-import "../globals.css";
 
 import { setRequestLocale } from "next-intl/server";
 import enMessages from "../../../messages/en.json";
@@ -18,21 +16,6 @@ const messagesByLocale: Record<string, typeof enMessages> = {
 function getMessages(locale: string) {
   return messagesByLocale[locale] ?? enMessages;
 }
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin", "cyrillic"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-});
-
-const noto = Noto_Sans_JP({
-  variable: "--font-noto",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "https://marmansu-llc.github.io"),
@@ -63,15 +46,8 @@ export default async function LocaleLayout({
   const messages = await getMessages(locale);
 
   return (
-    <html
-      lang={locale}
-        className={`${inter.variable} ${jetbrainsMono.variable} ${noto.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col font-sans">
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <ApolloClientProvider>{children}</ApolloClientProvider>
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <ApolloClientProvider>{children}</ApolloClientProvider>
+    </NextIntlClientProvider>
   );
 }

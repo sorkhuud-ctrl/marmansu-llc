@@ -2,12 +2,11 @@ import { HeaderWrapper } from "@/components/layout/HeaderWrapper";
 import { FooterWrapper } from "@/components/layout/FooterWrapper";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { AboutSection } from "@/components/sections/AboutSection";
-import { AqbSection } from "@/components/sections/AqbSection";
-import { DentalSolutionsSection } from "@/components/sections/DentalSolutionsSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
-import { EducationSection } from "@/components/sections/EducationSection";
-import { CooperationSection } from "@/components/sections/CooperationSection";
-import { PartnershipSection } from "@/components/sections/PartnershipSection";
+import { ProductsSection } from "@/components/sections/ProductsSection";
+import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { PartnersSection } from "@/components/sections/PartnersSection";
+import { CtaSection } from "@/components/sections/CtaSection";
 
 export default async function HomePage({
   params,
@@ -22,12 +21,11 @@ export default async function HomePage({
       <main className="flex-1">
         <HeroSection />
         <AboutSection />
-        <AqbSection />
-        <DentalSolutionsSection />
         <ServicesSection />
-        <EducationSection />
-        <CooperationSection />
-        <PartnershipSection />
+        <ProductsSection />
+        <ProjectsSection />
+        <PartnersSection />
+        <CtaSection />
       </main>
       <FooterWrapper locale={locale} />
     </>

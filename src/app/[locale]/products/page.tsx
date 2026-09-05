@@ -18,6 +18,16 @@ export default async function ProductsPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
+  const qualityCopy = locale === "ja"
+    ? {
+        title: t("products.qualityTitle"),
+        description: t("products.qualityDescription"),
+      }
+    : {
+        title: "Japanese Standards, Mongolian Care",
+        description:
+          "Every product we represent is evaluated against strict quality and safety criteria. We partner only with reputable Japanese manufacturers who share our commitment to long-term healthcare value.",
+      };
 
   return (
     <>
@@ -56,10 +66,10 @@ export default async function ProductsPage({
               <FadeIn direction="up">
                 <div className="space-y-4">
                   <h2 className="text-2xl md:text-3xl font-semibold text-navy">
-                    Japanese Standards, Mongolian Care
+                    {qualityCopy.title}
                   </h2>
                   <p className="text-muted-foreground leading-relaxed">
-                    Every product we represent is evaluated against strict quality and safety criteria. We partner only with reputable Japanese manufacturers who share our commitment to long-term healthcare value.
+                    {qualityCopy.description}
                   </p>
                 </div>
               </FadeIn>
