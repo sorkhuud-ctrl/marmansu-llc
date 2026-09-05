@@ -6,9 +6,25 @@ import { FadeIn } from "@/components/motion/FadeIn";
 import Image from "@/components/common/Image";
 
 const categories = [
-  { key: "japanese", placeholders: ["Welcia Yakkyoku", "J.Morita", "AQB ABI Implant"] },
-  { key: "academic", placeholders: ["University Partners", "Medical Associations", "Training Institutes"] },
-  { key: "mongolian", placeholders: ["Hospitals", "Clinics", "Healthcare Orgs"] },
+  {
+    key: "japanese",
+    placeholders: ["Welcia Yakkyoku", "J.Morita", "AQB ABI Implant"],
+    logos: ["/images/welcia-logo.png", "/images/morita-logo.webp", "/images/aqb-logo.png"],
+  },
+  {
+    key: "academic",
+    placeholders: ["University Partners", "Medical Associations", "Training Institutes"],
+    logos: ["/images/aichi-gakuin-logo.png", "/images/jmdn-logo.png"],
+  },
+  {
+    key: "mongolian",
+    placeholders: ["Hospitals", "Clinics", "Healthcare Orgs"],
+    logos: [
+      "/images/mnums-logo.png",
+      "/images/mnums-dentistry.jfif",
+      "/images/mongolian-dental-association.webp",
+    ],
+  },
 ];
 
 export default async function PartnersPage({
@@ -54,15 +70,17 @@ export default async function PartnersPage({
                       {(locale === "ja" && category.key === "academic"
                         ? category.placeholders.slice(0, 2)
                         : category.placeholders
-                      ).map((placeholder, i) => (
-                        <div
+                      ).map((placeholder, i) => {
+                        const logoSrc = category.logos[i];
+
+                        return <div
                           key={i}
                           className={
                             ((locale === "ja" && category.key === "japanese" && i < 3) ||
                               (locale === "ja" && category.key === "academic") ||
                               (locale === "ja" && category.key === "mongolian"))
                               ? "h-32 bg-white rounded border border-border flex flex-col items-center justify-center gap-1 px-4"
-                              : "h-20 bg-secondary rounded border border-border flex items-center justify-center text-sm text-muted-foreground"
+                              : "h-20 bg-secondary rounded border border-border flex flex-col items-center justify-center gap-1 px-2 text-sm text-muted-foreground"
                           }
                         >
                           {locale === "ja" && category.key === "japanese" && i === 0 ? (
@@ -184,10 +202,29 @@ export default async function PartnersPage({
                               <span className="text-xs text-muted-foreground">歯科医療・専門家連携</span>
                             </>
                           ) : (
-                            placeholder
+                            <>
+                              {logoSrc ? (
+                                <Image
+                                  src={logoSrc}
+                                  alt={`${placeholder} logo`}
+                                  width={180}
+                                  height={56}
+                                  className={
+                                    category.key === "japanese" && i === 0
+                                      ? "h-8 w-28 object-contain"
+                                      : category.key === "academic" && i === 0
+                                        ? "h-10 w-10 object-contain"
+                                        : category.key === "mongolian" && i === 2
+                                          ? "h-10 w-10 object-contain"
+                                          : "h-10 w-full max-w-[150px] object-contain"
+                                  }
+                                />
+                              ) : null}
+                              <span>{placeholder}</span>
+                            </>
                           )}
                         </div>
-                      ))}
+                      })}
                     </div>
                   </div>
                 </FadeIn>
