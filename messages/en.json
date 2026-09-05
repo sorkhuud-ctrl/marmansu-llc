@@ -196,6 +196,137 @@
       "description": "Japanese medical device receives regulatory approval in Mongolia."
     }
   },
+  "aqb": {
+    "hero": {
+      "eyebrow": "JAPANESE IMPLANT TECHNOLOGY",
+      "title": "AQB Implant System",
+      "philosophy": "Simple is Best.",
+      "body": "Developed in Japan, AQB is a one-piece implant system based on the \"Simple is Best\" concept, combining a simple structural design with a re-crystallized hydroxyapatite surface.",
+      "concept1": "ONE-PIECE DESIGN",
+      "concept2": "RE-CRYSTALLIZED HA SURFACE",
+      "concept3": "EXISTING BONE PRESERVATION"
+    },
+    "philosophy": {
+      "eyebrow": "AQB PHILOSOPHY",
+      "title": "Simple is Best.",
+      "body1": "AQB was developed around a straightforward clinical idea: implant treatment should respect the patient's existing anatomy and avoid unnecessary complexity wherever possible.",
+      "body2": "Rather than adding complexity to treatment, the AQB philosophy focuses on a simple implant design, preservation of existing bone, and a biologically focused clinical approach."
+    },
+    "onePiece": {
+      "eyebrow": "DESIGN PHILOSOPHY",
+      "title": "One-Piece by Design",
+      "body1": "AQB integrates the implant body and abutment into a single one-piece structure.",
+      "body2": "This simple structural concept reflects the AQB philosophy of reducing unnecessary complexity while maintaining a clinically focused approach to implant treatment.",
+      "item1Title": "INTEGRATED STRUCTURE",
+      "item1Body": "The implant body and abutment are integrated into a single design.",
+      "item2Title": "SIMPLE CLINICAL CONCEPT",
+      "item2Body": "The one-piece structure expresses AQB's “Simple is Best” philosophy through a straightforward implant design.",
+      "item3Title": "BIOLOGICALLY FOCUSED",
+      "item3Body": "The design is considered together with preservation of existing bone, biological integration, and appropriate clinical management."
+    },
+    "surfaceTechnology": {
+      "eyebrow": "SURFACE TECHNOLOGY",
+      "title": "Re-crystallized Hydroxyapatite Surface",
+      "body": "AQB uses a hydroxyapatite (HA) surface that undergoes a re-crystallization process designed to create a biologically focused interface between the implant and surrounding bone.",
+      "item1Title": "HYDROXYAPATITE SURFACE",
+      "item1Body": "Hydroxyapatite is a calcium phosphate material with a mineral composition related to that found in natural bone.",
+      "item2Title": "RE-CRYSTALLIZATION",
+      "item2Body": "AQB's HA surface undergoes a re-crystallization process as part of its surface treatment, creating the characteristic surface structure of the implant.",
+      "item3Title": "BONE-IMPLANT INTERFACE",
+      "item3Body": "The surface is designed to support the biological interaction that occurs at the interface between the implant and surrounding bone during healing.",
+      "closing": "For AQB, surface technology is not treated as an isolated feature. It forms part of a broader clinical philosophy centered on biology, existing bone, and appropriate clinical management."
+    },
+    "existingBone": {
+      "eyebrow": "CLINICAL PHILOSOPHY",
+      "title": "Respecting Existing Bone",
+      "body1": "AQB clinical philosophy places importance on making effective use of the patient's existing anatomy and preserving existing bone wherever clinically appropriate.",
+      "body2": "Rather than treating implant placement as an isolated mechanical procedure, treatment planning begins with understanding the available bone, surrounding anatomy, and the individual clinical situation.",
+      "item1Title": "START WITH EXISTING ANATOMY",
+      "item1Body": "Treatment planning begins with careful consideration of the patient's available bone and surrounding anatomical structures.",
+      "item2Title": "PRESERVE WHERE APPROPRIATE",
+      "item2Body": "The clinical approach seeks to preserve and make effective use of existing bone wherever this is appropriate for the individual case.",
+      "item3Title": "CASE-BY-CASE JUDGMENT",
+      "item3Body": "The appropriate surgical and restorative approach depends on the patient's anatomy, bone condition, treatment plan, and professional clinical judgment.",
+      "closing": "Existing Bone Preservation is therefore a clinical philosophy - not a promise to avoid additional procedures in every case."
+    },
+    "biologicalIntegration": {
+      "eyebrow": "BIOLOGICAL INTEGRATION",
+      "title": "Supporting the Bone–Implant Relationship",
+      "body1": "AQB's clinical concept considers biological integration as part of the relationship between the implant surface, surrounding bone, and appropriate clinical management.",
+      "body2": "The re-crystallized hydroxyapatite surface is designed to support the biological interaction at the bone–implant interface during healing. Clinical progress should always be evaluated according to the individual patient and treatment situation.",
+      "item1Title": "BONE-IMPLANT INTERFACE",
+      "item1Body": "Biological integration develops at the interface between the implant surface and surrounding bone.",
+      "item2Title": "HEALING AS A PROCESS",
+      "item2Body": "Integration should be understood as a biological healing process rather than a fixed or guaranteed timeline.",
+      "item3Title": "CLINICAL OBSERVATION",
+      "item3Body": "Healing and implant stability should be evaluated continuously according to the individual clinical situation."
+    },
+    "occlusalAdjustment": {
+      "eyebrow": "CLINICAL MANAGEMENT",
+      "title": "Occlusal Adjustment Matters",
+      "body1": "Successful implant treatment depends not only on implant design and biological integration, but also on appropriate clinical management after placement.",
+      "body2": "In AQB clinical practice, careful occlusal adjustment is an important part of managing the forces applied to the implant and surrounding structures. Occlusion should be evaluated and adjusted according to the individual clinical situation.",
+      "item1Title": "ASSESS OCCLUSION",
+      "item1Body": "Evaluate the patient's occlusal condition as part of implant treatment and restorative planning.",
+      "item2Title": "MANAGE FUNCTIONAL LOAD",
+      "item2Body": "Occlusal contacts and functional loading should be carefully managed according to the healing stage and individual clinical situation.",
+      "item3Title": "CONTINUE OBSERVATION",
+      "item3Body": "Occlusion should be reassessed during follow-up as part of the continuing clinical management of the implant."
+    },
+    "maintenance": {
+      "eyebrow": "LONG-TERM CARE",
+      "title": "Maintenance Is Part of Implant Treatment",
+      "body1": "Implant treatment does not end with placement or restoration. Long-term clinical observation and regular maintenance are important parts of implant care.",
+      "body2": "Continued evaluation of the peri-implant tissues, oral hygiene, occlusion, and the overall clinical condition helps support the long-term management of the implant.",
+      "item1Title": "REGULAR MAINTENANCE",
+      "item1Body": "Periodic professional maintenance supports continued observation of the implant and surrounding tissues.",
+      "item2Title": "PERI-IMPLANT HEALTH",
+      "item2Body": "The condition of the tissues surrounding the implant should be monitored as part of long-term clinical care.",
+      "item3Title": "CONTINUED OBSERVATION",
+      "item3Body": "Occlusion, hygiene, tissue condition, and implant stability should continue to be evaluated over time."
+    },
+    "naturalTooth": {
+      "eyebrow": "AQB CLINICAL PHILOSOPHY",
+      "title": "Treat the Implant as a Natural Tooth",
+      "body1": "AQB clinical philosophy emphasizes that an implant should not be considered an isolated device after treatment.",
+      "body2": "Like a natural tooth, it exists within a biological and functional environment and requires continued observation, appropriate occlusal management, oral hygiene, and professional maintenance.",
+      "closing": "Simple implant treatment is supported by careful diagnosis, respect for biology, appropriate clinical management, and long-term care."
+    },
+    "keyFeatures": {
+      "eyebrow": "KEY FEATURES",
+      "title": "Why AQB",
+      "feature1Label": "DESIGN",
+      "feature1Title": "One-Piece Design",
+      "feature1Description": "AQB integrates the implant body and abutment into a single structure, reflecting its simple structural concept.",
+      "feature2Label": "SURFACE",
+      "feature2Title": "Re-crystallized Hydroxyapatite Surface",
+      "feature2Description": "A specialized surface treatment designed to support biological integration between the implant and surrounding bone tissue.",
+      "feature3Label": "BIOLOGY",
+      "feature3Title": "Early Biological Integration",
+      "feature3Description": "AQB's re-crystallized hydroxyapatite surface is designed to support early biological integration between the implant and surrounding bone."
+    },
+    "inMongolia": {
+      "eyebrow": "AQB IN MONGOLIA",
+      "title": "MARMANSU's Role",
+      "role1Title": "Official Distribution",
+      "role1Description": "MARMANSU is an official distributor of the AQB Implant System in Mongolia, supporting its introduction and long-term development in the Mongolian market.",
+      "role2Title": "Product Support",
+      "role2Description": "We provide product information, local coordination, and ongoing support for dental professionals using AQB in Mongolia.",
+      "role3Title": "Professional Education & Training",
+      "role3Description": "We support professional education and clinical knowledge exchange by connecting Mongolian dental professionals with experienced AQB clinicians and experts from Japan."
+    },
+    "learnMore": {
+      "eyebrow": "MORE INFORMATION",
+      "title": "Learn More About AQB",
+      "description": "For detailed information about AQB technology, products, manufacturing, and the company, please visit the official AQB website.",
+      "ctaLabel": "Visit Official AQB Website"
+    },
+    "inquiry": {
+      "title": "Interested in AQB Implant?",
+      "description": "For AQB product information, availability, professional education, or partnership inquiries in Mongolia, please contact MARMANSU.",
+      "ctaLabel": "Contact MARMANSU"
+    }
+  },
   "footer": {
     "rights": "All rights reserved",
     "privacy": "Privacy Policy",
