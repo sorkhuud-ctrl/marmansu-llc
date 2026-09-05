@@ -41,7 +41,7 @@ export default async function NewsPage({
                 <FadeIn key={`${item.key}-${index}`} direction="up" delay={index * 0.05}>
                   <div className="flex flex-col md:flex-row gap-6 bg-secondary rounded-lg p-6 md:p-8">
                     <div className="w-32 flex-shrink-0">
-                      <p className="text-sm font-semibold text-gold">{item.date}</p>
+                      <p className="text-sm font-semibold text-accent">{item.date}</p>
                     </div>
                     <div className="space-y-2">
                       <h3 className="text-xl font-semibold text-navy">

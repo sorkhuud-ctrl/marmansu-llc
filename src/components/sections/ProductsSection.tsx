@@ -34,7 +34,7 @@ export function ProductsSection() {
               <motion.div
                 whileHover={{ y: -4 }}
                 transition={{ duration: 0.25 }}
-                className="bg-secondary rounded-lg p-7 hover:bg-white hover:shadow-card-hover transition-all border border-transparent hover:border-border"
+                className="bg-secondary rounded-md p-7 hover:bg-white hover:shadow transition-all border border-transparent hover:border-border"
               >
                 <h3 className="text-lg font-semibold text-navy mb-2">
                   {t(`product.${product.key}.title`)}

@@ -36,12 +36,12 @@ export function Header({ items }: { items?: HeaderItem[] }) {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur">
       <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 xl:px-12">
-        <div className="flex h-20 items-center justify-between">
-          <Link href="/" className="text-xl font-semibold tracking-[0.1em] text-navy">
+        <div className="flex h-16 items-center justify-between">
+          <Link href="/" className="text-lg font-semibold tracking-[0.08em] text-navy">
             MARMANSU
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-6">
             {navItems.map((item) => (
               <Link
                 key={item.key}

@@ -29,7 +29,7 @@ export default async function ContactPage({
               <FadeIn direction="up" delay={0.1} className="lg:col-span-2">
                 <div className="space-y-8">
                   <div className="space-y-2">
-                    <p className="text-xs font-semibold tracking-[0.15em] text-gold uppercase">{t("address")}</p>
+                    <p className="text-xs font-semibold tracking-[0.15em] text-accent uppercase">{t("address")}</p>
                     <p className="text-foreground leading-relaxed">
                       MARMANSU LLC
                       <br />
@@ -42,14 +42,14 @@ export default async function ContactPage({
                   </div>
 
                   <div className="space-y-2">
-                    <p className="text-xs font-semibold tracking-[0.15em] text-gold uppercase">{t("emailLabel")}</p>
+                    <p className="text-xs font-semibold tracking-[0.15em] text-accent uppercase">{t("emailLabel")}</p>
                     <a href="mailto:marmansullc@gmail.com" className="text-navy hover:underline">
                       marmansullc@gmail.com
                     </a>
                   </div>
 
                   <div className="space-y-2">
-                    <p className="text-xs font-semibold tracking-[0.15em] text-gold uppercase">{t("phoneLabel")}</p>
+                    <p className="text-xs font-semibold tracking-[0.15em] text-accent uppercase">{t("phoneLabel")}</p>
                     <a href="tel:+97677182255" className="text-navy hover:underline">
                       +976 77182255
                     </a>
