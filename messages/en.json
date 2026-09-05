@@ -14,7 +14,14 @@
     "title": "More Than Products",
     "subtitle": "We deliver trust, knowledge, and long-term healthcare partnerships between Japan and Mongolia.",
     "exploreServices": "Explore Services",
-    "contactUs": "Contact Us"
+    "contactUs": "Contact Us",
+    "discoverAqb": "Discover AQB Implant",
+    "japanMongolia": "JAPAN · MONGOLIA",
+    "japan": "JAPAN",
+    "japanValues": "Quality · Innovation · Trust",
+    "mongolia": "MONGOLIA",
+    "mongoliaValues": "Growth · Partnership · Care",
+    "connectingMessage": "Connecting quality healthcare across borders"
   },
   "about": {
     "label": "ABOUT MARMANSU",
@@ -31,6 +38,16 @@
     "label": "PRODUCTS",
     "title": "Quality Healthcare Products",
     "description": "We focus on quality, safety, and Japanese standards rather than prices or technical specifications."
+  },
+  "dentalSolutions": {
+    "label": "JAPANESE DENTAL SOLUTIONS",
+    "title": "Dental Materials & Equipment",
+    "description": "Japanese solutions for modern dental practice.",
+    "body": "MARMANSU supplies selected Japanese dental materials in Mongolia and supports the sourcing of professional dental equipment according to clinical and institutional needs.",
+    "explore": "Explore Dental Solutions",
+    "featuredMaterials": "Featured dental materials",
+    "equipment": "Dental Equipment",
+    "equipmentDescription": "Professional Japanese dental equipment supplied according to clinical and institutional requirements."
   },
   "projects": {
     "label": "PROJECTS & CASE STUDIES",
