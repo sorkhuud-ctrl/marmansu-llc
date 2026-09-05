@@ -19,17 +19,28 @@ export function Header({ items }: { items?: HeaderItem[] }) {
 
   const navItems = items?.length
     ? items
+        .filter((item) => {
+          const path = item.url.replace(/^\/(?:en|ja|mn)(?=\/|$)/, "") || "/";
+          return path !== "/services" && path !== "/news";
+        })
         .slice()
-        .sort((a, b) => (a.order ?? 0) - (b.order ?? 0))
+        .sort((a, b) => {
+          const navOrder = ["/", "/about", "/partners", "/products", "/projects", "/contact"];
+          const aPath = a.url.replace(/^\/(?:en|ja|mn)(?=\/|$)/, "") || "/";
+          const bPath = b.url.replace(/^\/(?:en|ja|mn)(?=\/|$)/, "") || "/";
+          const aIndex = navOrder.indexOf(aPath);
+          const bIndex = navOrder.indexOf(bPath);
+          const aRank = aIndex === -1 ? navOrder.length : aIndex;
+          const bRank = bIndex === -1 ? navOrder.length : bIndex;
+          return aRank - bRank || (a.order ?? 0) - (b.order ?? 0);
+        })
         .map((item) => ({ key: item._id, label: item.label, href: item.url }))
     : [
         { key: "home", label: t("home"), href: "/" },
         { key: "about", label: t("about"), href: "/about" },
-        { key: "services", label: t("services"), href: "/services" },
+        { key: "partners", label: t("partners"), href: "/partners" },
         { key: "products", label: t("products"), href: "/products" },
         { key: "projects", label: t("projects"), href: "/projects" },
-        { key: "partners", label: t("partners"), href: "/partners" },
-        { key: "news", label: t("news"), href: "/news" },
         { key: "contact", label: t("contact"), href: "/contact" },
       ];
 
