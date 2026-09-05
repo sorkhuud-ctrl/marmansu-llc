@@ -198,13 +198,13 @@
   },
   "aqb": {
     "hero": {
-      "eyebrow": "ЯПОНЫ ИМПЛАНТЫН ТЕХНОЛОГИ",
-      "title": "AQB имплантын систем",
+      "eyebrow": "ЯПОНЫ ИМПЛАНТЫН ДЭВШИЛТЭТ ТЕХНОЛОГИ",
+      "title": "AQB Implant System",
       "philosophy": "Simple is Best.",
-      "body": "Японд хөгжүүлсэн AQB нь нэг хэсэгт бүтэцтэй имплантын систем бөгөөд одоо байгаа ясыг хүндэтгэн хадгалах, биологийн зарчимд тулгуурласан эмчилгээг дэмжих энгийн клиникийн философид үндэслэдэг.",
-      "concept1": "НЭГ ХЭСЭГТ БҮТЭЦ",
+      "body": "Японд хөгжүүлсэн AQB Имплант систем нь \"Энгийн байх нь хамгийн сайн\" гэдэг үзэлд суурилсан, НЭГ БҮХЭЛ бүтэц болон ДАХИН ТАЛСТЖУУЛСАН ГИДРОКСИАПАТИТ гадаргууг хослуулсан имплантын систем юм.",
+      "concept1": "НЭГ БҮХЭЛ БҮТЭЦ",
       "concept2": "ДАХИН ТАЛСТЖУУЛСАН HA ГАДАРГУУ",
-      "concept3": "ОДОО БАЙГАА ЯСЫГ ХАДГАЛАХ"
+      "concept3": "БИОЛОГИЙН НЭГДЭЛ"
     },
     "philosophy": {
       "eyebrow": "AQB ФИЛОСОФИ",
@@ -293,38 +293,38 @@
       "closing": "Simple implant treatment is supported by careful diagnosis, respect for biology, appropriate clinical management, and long-term care."
     },
     "keyFeatures": {
-      "eyebrow": "KEY FEATURES",
-      "title": "Why AQB",
-      "feature1Label": "DESIGN",
-      "feature1Title": "One-Piece Design",
-      "feature1Description": "AQB integrates the implant body and abutment into a single structure, reducing unnecessary complexity while maintaining clinical effectiveness.",
-      "feature2Label": "SURFACE",
-      "feature2Title": "Re-crystallized HA Surface",
-      "feature2Description": "A specialized surface treatment designed to support biological integration between the implant and surrounding bone tissue.",
-      "feature3Label": "PHILOSOPHY",
-      "feature3Title": "Existing Bone Preservation",
-      "feature3Description": "AQB clinical philosophy emphasizes respect for the patient's existing anatomy and preservation of bone wherever appropriate."
+      "eyebrow": "AQB-ИЙН ОНЦЛОГ",
+      "title": "Яагаад AQB гэж?",
+      "feature1Label": "БҮТЭЦ",
+      "feature1Title": "\"One-Piece\" буюу\nНэг бүхэл бүтэц",
+      "feature1Description": "AQB нь имплантын их бие болон абатментыг нэг бүхэл бүтцэд нэгтгэсэн энгийн хийцтэй.",
+      "feature2Label": "ГАДАРГУУ",
+      "feature2Title": "Дахин талстжуулсан гидроксиапатит гадаргуу",
+      "feature2Description": "Имплант ба ясыг биологийн нэгтгэлд оруулдаг тусгай гадаргуугийн боловсруулалт.",
+      "feature3Label": "БИОЛОГИ",
+      "feature3Title": "Богино хугацааны биологийн нэгдэл",
+      "feature3Description": "Дахин талстжуулсан гидроксиапатит гадаргуу нь ясыг өөртөө татан ургуулж, имплантыг богино хугацаанд (1-2 сард) ястай бат бөх нэгтгэдэг."
     },
     "inMongolia": {
-      "eyebrow": "AQB IN MONGOLIA",
-      "title": "MARMANSU's Role",
-      "role1Title": "Official Distribution",
-      "role1Description": "MARMANSU is the official distributor and market partner for AQB Implant System in Mongolia, bringing Japanese implant technology to Mongolian dental professionals.",
-      "role2Title": "Product Support",
-      "role2Description": "We provide technical support, product information, and clinical resources to ensure successful AQB implementation in your practice.",
-      "role3Title": "Professional Education",
-      "role3Description": "MARMANSU offers training and educational programs to support Mongolian dentists and healthcare professionals in adopting AQB techniques and philosophy."
+      "eyebrow": "МОНГОЛ ДАХЬ AQB",
+      "title": "MARMANSU-ийн үүрэг",
+      "role1Title": "Албан ёсны дистрибьютор",
+      "role1Description": "MARMANSU нь Монгол дахь AQB Implant-ийн албан ёсны дистрибьютор бөгөөд бүтээгдэхүүний тогтвортой нийлүүлэлт, Монголын зах зээл дэх урт хугацааны хөгжлийг хариуцан ажиллаж байна.",
+      "role2Title": "Бүтээгдэхүүний дэмжлэг",
+      "role2Description": "AQB бүтээгдэхүүний мэдээлэл, сонголт, захиалга болон хэрэглээтэй холбоотой мэдээлэл, дэмжлэгийг Монголын шүдний эмч, мэргэжилтнүүдэд хүргэн ажилладаг.",
+      "role3Title": "Мэргэжлийн сургалт ба боловсрол",
+      "role3Description": "Японы AQB-ийн туршлагатай эмч, мэргэжилтнүүдтэй хамтран сургалт, клиникийн мэдлэг, туршлага солилцох боломжийг Монголын шүдний эмч нарт хүргэн ажилладаг."
     },
     "learnMore": {
-      "eyebrow": "MORE INFORMATION",
-      "title": "Learn More About AQB",
-      "description": "For detailed technical information, product specifications, clinical research, and the complete AQB product lineup, visit the official AQB manufacturer website.",
-      "ctaLabel": "Visit Official AQB Website"
+      "eyebrow": "ДЭЛГЭРЭНГҮЙ МЭДЭЭЛЭЛ",
+      "title": "AQB-ийн талаар дэлгэрэнгүй",
+      "description": "AQB-ийн технологи, бүтээгдэхүүн, үйлдвэрлэл болон компанийн талаарх дэлгэрэнгүй мэдээллийг AQB-ийн албан ёсны вэбсайтаас авна уу.",
+      "ctaLabel": "AQB-ийн албан ёсны вэбсайт"
     },
     "inquiry": {
-      "title": "Ready to Integrate AQB?",
-      "description": "For inquiries about AQB implants, product availability, training programs, or technical support in Mongolia, contact MARMANSU directly.",
-      "ctaLabel": "Contact MARMANSU"
+      "title": "AQB Implant сонирхож байна уу?",
+      "description": "Монгол дахь AQB-ийн бүтээгдэхүүний мэдээлэл, нийлүүлэлт, мэргэжлийн сургалт болон хамтын ажиллагааны талаар MARMANSU-тай холбогдоно уу.",
+      "ctaLabel": "MARMANSU-тай холбогдох"
     }
   },
   "footer": {

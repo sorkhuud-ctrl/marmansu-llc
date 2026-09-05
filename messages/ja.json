@@ -198,13 +198,13 @@
   },
   "aqb": {
     "hero": {
-      "eyebrow": "JAPANESE IMPLANT TECHNOLOGY",
+      "eyebrow": "日本の先進インプラント技術",
       "title": "AQB Implant System",
       "philosophy": "Simple is Best.",
-      "body": "Developed in Japan, AQB is a one-piece implant system built around a simple clinical philosophy — respecting existing bone and supporting a biologically focused approach to implant treatment.",
-      "concept1": "ONE-PIECE DESIGN",
-      "concept2": "RE-CRYSTALLIZED HA SURFACE",
-      "concept3": "EXISTING BONE PRESERVATION"
+      "body": "日本で開発されたAQBインプラントシステムは、「Simple is Best.」の考え方に基づき、ワンピース構造と再結晶化ハイドロキシアパタイト表面を組み合わせたインプラントシステムです。",
+      "concept1": "ワンピース構造",
+      "concept2": "再結晶化ハイドロキシアパタイト表面",
+      "concept3": "生物学的結合"
     },
     "philosophy": {
       "eyebrow": "AQB PHILOSOPHY",
@@ -293,38 +293,38 @@
       "closing": "Simple implant treatment is supported by careful diagnosis, respect for biology, appropriate clinical management, and long-term care."
     },
     "keyFeatures": {
-      "eyebrow": "KEY FEATURES",
-      "title": "Why AQB",
-      "feature1Label": "DESIGN",
-      "feature1Title": "One-Piece Design",
-      "feature1Description": "AQB integrates the implant body and abutment into a single structure, reducing unnecessary complexity while maintaining clinical effectiveness.",
-      "feature2Label": "SURFACE",
-      "feature2Title": "Re-crystallized HA Surface",
-      "feature2Description": "A specialized surface treatment designed to support biological integration between the implant and surrounding bone tissue.",
-      "feature3Label": "PHILOSOPHY",
-      "feature3Title": "Existing Bone Preservation",
-      "feature3Description": "AQB clinical philosophy emphasizes respect for the patient's existing anatomy and preservation of bone wherever appropriate."
+      "eyebrow": "AQBの特徴",
+      "title": "なぜAQBなのか",
+      "feature1Label": "構造",
+      "feature1Title": "「One-Piece」\nワンピース構造",
+      "feature1Description": "AQBは、インプラント体とアバットメントを一体化したシンプルなワンピース構造です。",
+      "feature2Label": "表面",
+      "feature2Title": "再結晶化ハイドロキシアパタイト表面",
+      "feature2Description": "インプラントと骨との生物学的結合を促すための特殊な表面処理です。",
+      "feature3Label": "生物学",
+      "feature3Title": "早期の生物学的結合",
+      "feature3Description": "再結晶化ハイドロキシアパタイト表面により骨形成が促され、比較的早期（1～2か月）にインプラントと骨との強固な結合が形成されます。"
     },
     "inMongolia": {
-      "eyebrow": "AQB IN MONGOLIA",
-      "title": "MARMANSU's Role",
-      "role1Title": "Official Distribution",
-      "role1Description": "MARMANSU is the official distributor and market partner for AQB Implant System in Mongolia, bringing Japanese implant technology to Mongolian dental professionals.",
-      "role2Title": "Product Support",
-      "role2Description": "We provide technical support, product information, and clinical resources to ensure successful AQB implementation in your practice.",
-      "role3Title": "Professional Education",
-      "role3Description": "MARMANSU offers training and educational programs to support Mongolian dentists and healthcare professionals in adopting AQB techniques and philosophy."
+      "eyebrow": "モンゴルにおけるAQB",
+      "title": "MARMANSUの役割",
+      "role1Title": "正規代理店",
+      "role1Description": "MARMANSUは、モンゴルにおけるAQBインプラントの正規代理店として、製品の安定供給とモンゴル市場での長期的な普及・発展に取り組んでいます。",
+      "role2Title": "製品サポート",
+      "role2Description": "AQB製品に関する情報提供、製品選択、注文、使用に関するサポートを、モンゴルの歯科医師・医療関係者に提供しています。",
+      "role3Title": "専門教育・研修",
+      "role3Description": "日本のAQB臨床経験を持つ歯科医師・専門家と連携し、モンゴルの歯科医師に向けた研修や、臨床知識・経験を共有する機会づくりを支援しています。"
     },
     "learnMore": {
-      "eyebrow": "MORE INFORMATION",
-      "title": "Learn More About AQB",
-      "description": "For detailed technical information, product specifications, clinical research, and the complete AQB product lineup, visit the official AQB manufacturer website.",
-      "ctaLabel": "Visit Official AQB Website"
+      "eyebrow": "詳しい情報",
+      "title": "AQBについて詳しく知る",
+      "description": "AQBの技術、製品、製造および企業情報については、AQB公式ウェブサイトをご覧ください。",
+      "ctaLabel": "AQB公式サイトを見る"
     },
     "inquiry": {
-      "title": "Ready to Integrate AQB?",
-      "description": "For inquiries about AQB implants, product availability, training programs, or technical support in Mongolia, contact MARMANSU directly.",
-      "ctaLabel": "Contact MARMANSU"
+      "title": "AQBインプラントに関するお問い合わせ",
+      "description": "モンゴルにおけるAQB製品、供給、専門研修、その他のお問い合わせは、MARMANSUまでお気軽にご連絡ください。",
+      "ctaLabel": "MARMANSUに問い合わせる"
     }
   },
   "footer": {
