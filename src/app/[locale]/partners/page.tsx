@@ -3,6 +3,7 @@ import { HeaderWrapper } from "@/components/layout/HeaderWrapper";
 import { FooterWrapper } from "@/components/layout/FooterWrapper";
 import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn } from "@/components/motion/FadeIn";
+import Image from "@/components/common/Image";
 
 const categories = [
   { key: "japanese", placeholders: ["Welcia Yakkyoku", "J.Morita", "AQB ABI Implant"] },
@@ -28,7 +29,8 @@ export default async function PartnersPage({
           <div className="mx-auto max-w-[1280px] px-4 sm:px-6 lg:px-8 xl:px-12 py-16 lg:py-24">
             <FadeIn direction="up">
               <p className="text-lg text-muted-foreground max-w-3xl leading-relaxed">
-                {t("partners.description")} Logos are displayed only when permission is available.
+                {t("partners.description")}
+                {locale === "ja" ? null : " Logos are displayed only when permission is available."}
               </p>
             </FadeIn>
 
@@ -42,13 +44,148 @@ export default async function PartnersPage({
                     <p className="text-muted-foreground max-w-3xl leading-relaxed">
                       {t(`partner.${category.key}.description`)}
                     </p>
-                    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4">
-                      {category.placeholders.map((placeholder, i) => (
+                    <div
+                      className={
+                        locale === "ja" && category.key === "academic"
+                          ? "grid sm:grid-cols-2 gap-4 pt-4 max-w-3xl mx-auto"
+                          : "grid sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4"
+                      }
+                    >
+                      {(locale === "ja" && category.key === "academic"
+                        ? category.placeholders.slice(0, 2)
+                        : category.placeholders
+                      ).map((placeholder, i) => (
                         <div
                           key={i}
-                          className="h-20 bg-secondary rounded border border-border flex items-center justify-center text-sm text-muted-foreground"
+                          className={
+                            ((locale === "ja" && category.key === "japanese" && i < 3) ||
+                              (locale === "ja" && category.key === "academic") ||
+                              (locale === "ja" && category.key === "mongolian"))
+                              ? "h-32 bg-white rounded border border-border flex flex-col items-center justify-center gap-1 px-4"
+                              : "h-20 bg-secondary rounded border border-border flex items-center justify-center text-sm text-muted-foreground"
+                          }
                         >
-                          {placeholder}
+                          {locale === "ja" && category.key === "japanese" && i === 0 ? (
+                            <>
+                              <div className="h-20 w-full flex items-center justify-center">
+                                <Image
+                                  src="/images/morita-logo.webp"
+                                  alt="J. MORITA"
+                                  width={260}
+                                  height={100}
+                                  className="h-20 w-full object-contain"
+                                />
+                              </div>
+                              <span className="text-sm font-medium text-navy">株式会社モリタ</span>
+                              <span className="text-xs text-muted-foreground">歯科材料・歯科医療機器</span>
+                            </>
+                          ) : locale === "ja" && category.key === "japanese" && i === 1 ? (
+                            <>
+                              <div className="h-20 w-full flex items-center justify-center">
+                                <Image
+                                  src="/images/welcia-logo.png"
+                                  alt="ウエルシア薬局"
+                                  width={160}
+                                  height={64}
+                                  className="h-12 w-full object-contain"
+                                />
+                              </div>
+                              <span className="text-sm font-medium text-navy">ウエルシア薬局</span>
+                              <span className="text-xs text-muted-foreground">日本のドラッグストア製品</span>
+                            </>
+                          ) : locale === "ja" && category.key === "japanese" && i === 2 ? (
+                            <>
+                              <div className="h-20 w-full flex items-center justify-center">
+                                <Image
+                                  src="/images/aqb-logo.png"
+                                  alt="AQB・ABIインプラント株式会社"
+                                  width={200}
+                                  height={72}
+                                  className="h-14 w-full object-contain"
+                                />
+                              </div>
+                              <span className="text-sm font-medium text-navy">AQB・ABIインプラント株式会社</span>
+                              <span className="text-xs text-muted-foreground">歯科インプラント</span>
+                            </>
+                          ) : locale === "ja" && category.key === "academic" && i === 0 ? (
+                            <>
+                              <div className="h-20 w-full flex items-center justify-center">
+                                <Image
+                                  src="/images/aichi-gakuin-logo.png"
+                                  alt="愛知学院大学"
+                                  width={96}
+                                  height={120}
+                                  className="h-20 w-24 object-contain"
+                                />
+                              </div>
+                              <span className="text-sm font-medium text-navy">愛知学院大学</span>
+                              <span className="text-xs text-muted-foreground">大学・学術連携</span>
+                            </>
+                          ) : locale === "ja" && category.key === "academic" && i === 1 ? (
+                            <>
+                              <div className="h-20 w-full flex items-center justify-center">
+                                <Image
+                                  src="/images/jmdn-logo.png"
+                                  alt="日本医学歯学情報機構（JMDN）"
+                                  width={220}
+                                  height={80}
+                                  className="h-14 w-full max-w-[220px] object-contain"
+                                />
+                              </div>
+                              <span className="text-sm font-medium text-navy">日本医学歯学情報機構（JMDN）</span>
+                              <span className="text-xs text-muted-foreground">医療・歯科専門家ネットワーク</span>
+                            </>
+                          ) : locale === "ja" && category.key === "mongolian" && i === 0 ? (
+                            <>
+                              <div className="h-16 w-full flex items-center justify-center">
+                                <Image
+                                  src="/images/mnums-logo.png"
+                                  alt="モンゴル国立医科大学 モンゴル・日本病院"
+                                  width={240}
+                                  height={80}
+                                  className="h-14 w-full object-contain"
+                                />
+                              </div>
+                              <span className="text-sm font-medium text-navy text-center leading-tight">
+                                モンゴル国立医科大学
+                                <br />
+                                モンゴル・日本病院
+                              </span>
+                              <span className="text-xs text-muted-foreground">医療・人材交流</span>
+                            </>
+                          ) : locale === "ja" && category.key === "mongolian" && i === 1 ? (
+                            <>
+                              <div className="h-20 w-full flex items-center justify-center">
+                                <Image
+                                  src="/images/mnums-dentistry.jfif"
+                                  alt="モンゴル国立医科大学 歯学部"
+                                  width={260}
+                                  height={100}
+                                  className="h-20 w-full max-w-[260px] object-contain scale-[1.15]"
+                                />
+                              </div>
+                              <span className="text-sm font-medium text-navy text-center leading-tight">
+                                モンゴル国立医科大学 歯学部
+                              </span>
+                              <span className="text-xs text-muted-foreground">歯科教育・学術連携</span>
+                            </>
+                          ) : locale === "ja" && category.key === "mongolian" && i === 2 ? (
+                            <>
+                              <div className="h-20 w-full flex items-center justify-center">
+                                <Image
+                                  src="/images/mongolian-dental-association.webp"
+                                  alt="モンゴル歯科医師会"
+                                  width={96}
+                                  height={80}
+                                  className="h-16 w-16 object-contain"
+                                />
+                              </div>
+                              <span className="text-sm font-medium text-navy text-center">モンゴル歯科医師会</span>
+                              <span className="text-xs text-muted-foreground">歯科医療・専門家連携</span>
+                            </>
+                          ) : (
+                            placeholder
+                          )}
                         </div>
                       ))}
                     </div>

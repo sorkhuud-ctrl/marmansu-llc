@@ -55,7 +55,19 @@ export default async function ContactPage({
                     </a>
                   </div>
 
-                  <div className="aspect-video bg-muted rounded-lg" />
+                  {locale === "ja" ? (
+                    <div className="aspect-video overflow-hidden rounded-lg">
+                      <iframe
+                        title="MARMANSU LLC office location"
+                        src="https://www.google.com/maps?q=MARMANSU+LLC,+Unit+602,+Bldg.+36%2F2,+Baga+Toiruu,+Sukhbaatar+District,+Ulaanbaatar+14192,+Mongolia&output=embed"
+                        className="h-full w-full border-0"
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                      />
+                    </div>
+                  ) : (
+                    <div className="aspect-video bg-muted rounded-lg" />
+                  )}
                 </div>
               </FadeIn>
             </div>

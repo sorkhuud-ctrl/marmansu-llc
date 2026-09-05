@@ -4,14 +4,6 @@ import { FooterWrapper } from "@/components/layout/FooterWrapper";
 import { PageHero } from "@/components/sections/PageHero";
 import { FadeIn } from "@/components/motion/FadeIn";
 
-const newsItems = [
-  { key: "distribution", date: "June 2026" },
-  { key: "seminar", date: "May 2026" },
-  { key: "approval", date: "April 2026" },
-  { key: "distribution", date: "March 2026" },
-  { key: "seminar", date: "February 2026" },
-];
-
 export default async function NewsPage({
   params,
 }: {
@@ -19,6 +11,16 @@ export default async function NewsPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations({ locale });
+  const newsItems =
+    locale === "ja"
+      ? []
+      : [
+          { key: "distribution", date: "June 2026" },
+          { key: "seminar", date: "May 2026" },
+          { key: "approval", date: "April 2026" },
+          { key: "distribution", date: "March 2026" },
+          { key: "seminar", date: "February 2026" },
+        ];
 
   return (
     <>

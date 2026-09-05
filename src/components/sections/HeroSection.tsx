@@ -2,18 +2,30 @@
 
 import { motion } from "framer-motion";
 import { Link } from "@/i18n/routing";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { FadeIn } from "@/components/motion/FadeIn";
 
-const stats = [
-  { value: "2024", label: "Founded" },
-  { value: "3+", label: "Japanese Partners" },
-  { value: "5", label: "Core Services" },
-  { value: "MN | JP", label: "Markets" },
-];
-
 export function HeroSection() {
+  const locale = useLocale();
   const t = useTranslations("hero");
+  const isMongolian = locale === "mn";
+  const regionalCopy = isMongolian
+    ? {
+        region: "ЯПОН · МОНГОЛ",
+        japan: "ЯПОН",
+        japanDescription: "Чанар · Инноваци · Итгэлцэл",
+        mongolia: "МОНГОЛ",
+        mongoliaDescription: "Өсөлт · Түншлэл · Халамж",
+        bridge: "Хил дамнасан чанартай эрүүл мэндийн тусламж үйлчилгээг холбож байна",
+      }
+    : {
+        region: "JAPAN · MONGOLIA",
+        japan: "JAPAN",
+        japanDescription: "Quality · Innovation · Trust",
+        mongolia: "MONGOLIA",
+        mongoliaDescription: "Growth · Partnership · Care",
+        bridge: "Connecting quality healthcare across borders",
+      };
 
   return (
     <section className="w-full bg-background">
@@ -50,12 +62,12 @@ export function HeroSection() {
           <FadeIn direction="left" immediate>
             <div className="relative bg-secondary rounded-xl p-8 lg:p-10 shadow-soft">
               <p className="text-xs font-semibold tracking-[0.15em] text-gold uppercase text-center mb-8">
-                JAPAN · MONGOLIA
+                {regionalCopy.region}
               </p>
               <div className="flex items-center justify-center gap-4">
                 <div className="bg-white rounded-lg px-6 py-5 text-center shadow-card min-w-[120px]">
-                  <p className="text-sm font-semibold text-navy">JAPAN</p>
-                  <p className="text-xs text-muted-foreground mt-1">Quality · Innovation · Trust</p>
+                  <p className="text-sm font-semibold text-navy">{regionalCopy.japan}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{regionalCopy.japanDescription}</p>
                 </div>
                 <div className="flex items-center gap-2">
                   <div className="w-16 h-0.5 bg-gold" />
@@ -63,27 +75,17 @@ export function HeroSection() {
                   <div className="w-16 h-0.5 bg-gold" />
                 </div>
                 <div className="bg-white rounded-lg px-6 py-5 text-center shadow-card min-w-[120px]">
-                  <p className="text-sm font-semibold text-navy">MONGOLIA</p>
-                  <p className="text-xs text-muted-foreground mt-1">Growth · Partnership · Care</p>
+                  <p className="text-sm font-semibold text-navy">{regionalCopy.mongolia}</p>
+                  <p className="text-xs text-muted-foreground mt-1">{regionalCopy.mongoliaDescription}</p>
                 </div>
               </div>
               <p className="text-sm text-muted-foreground text-center mt-8">
-                Connecting quality healthcare across borders
+                {regionalCopy.bridge}
               </p>
             </div>
           </FadeIn>
         </div>
 
-        <FadeIn direction="up" immediate>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 pt-16 lg:pt-20 border-t border-border mt-16 lg:mt-20">
-            {stats.map((stat) => (
-              <div key={stat.label} className="text-center md:text-left">
-                <p className="text-3xl md:text-4xl font-semibold text-navy">{stat.value}</p>
-                <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
-              </div>
-            ))}
-          </div>
-        </FadeIn>
       </div>
     </section>
   );

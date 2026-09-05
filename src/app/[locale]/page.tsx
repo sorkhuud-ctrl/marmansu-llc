@@ -6,7 +6,6 @@ import { ServicesSection } from "@/components/sections/ServicesSection";
 import { ProductsSection } from "@/components/sections/ProductsSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { PartnersSection } from "@/components/sections/PartnersSection";
-import { NewsSection } from "@/components/sections/NewsSection";
 import { CtaSection } from "@/components/sections/CtaSection";
 
 export default async function HomePage({
@@ -26,7 +25,6 @@ export default async function HomePage({
         <ProductsSection />
         <ProjectsSection />
         <PartnersSection />
-        <NewsSection />
         <CtaSection />
       </main>
       <FooterWrapper locale={locale} />
