@@ -31,7 +31,7 @@ export function HeroSection() {
                                 Explore Our Solutions
                 </Link>
                 <Link
-                  href="/contact"
+                  href="/aqb"
                   className="inline-flex items-center justify-center rounded-sm border border-navy px-6 py-2.5 text-sm font-medium text-navy hover:bg-navy/5 transition-colors"
                 >
                                 Discover AQB Implant

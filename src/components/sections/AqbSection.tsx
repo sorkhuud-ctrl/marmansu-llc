@@ -44,7 +44,7 @@ export function AqbSection() {
 
               <div className="mt-8">
                 <Link
-                  href="/products"
+                   href="/aqb"
                   className="inline-flex items-center rounded-sm border border-navy px-6 py-2 text-sm font-medium text-navy hover:bg-navy/5 transition-colors"
                 >
                   Discover AQB Implant
