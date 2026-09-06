@@ -4,20 +4,24 @@ import { useTranslations } from "next-intl";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { SectionHeading } from "@/components/SectionHeading";
 import Image from "@/components/common/Image";
+import { Link } from "@/i18n/routing";
 
 const dentalMaterials = [
   {
     name: "VITAPEX",
+    slug: "vitapex",
     src: "/images/vitapex.jpg",
     alt: "VITAPEX product",
   },
   {
     name: "CALCIPEX II",
+    slug: "calcipex-ii",
     src: "/images/calcipex-ii.jpg",
     alt: "CALCIPEX II product",
   },
   {
     name: "PERIODON",
+    slug: "periodon",
     src: "/images/periodon-v2.jpg",
     alt: "PERIODON product",
   },
@@ -111,20 +115,29 @@ export function DentalSolutionsSection() {
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {dentalMaterials.map((material, index) => (
               <FadeIn key={material.name} direction="up" delay={index * 0.05}>
-                <article className="flex h-[22rem] flex-col rounded-lg border border-border bg-white p-6 shadow-sm sm:h-[25rem]">
-                  <div className="relative flex-1">
-                    <Image
-                      src={material.src}
-                      alt={material.alt}
-                      fill
-                      sizes="(min-width: 1024px) 360px, (min-width: 640px) 45vw, 100vw"
-                      className="object-contain"
-                    />
-                  </div>
-                  <h3 className="pt-5 text-center text-lg font-semibold text-navy">
-                    {material.name}
-                  </h3>
-                </article>
+                <Link
+                  href={`/products/${material.slug}`}
+                  className="block rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-navy focus-visible:ring-offset-2"
+                  aria-label={`${material.name}: ${t("viewDetails")}`}
+                >
+                  <article className="flex h-[22rem] flex-col rounded-lg border border-border bg-white p-6 shadow-sm transition-shadow hover:shadow-card-hover sm:h-[25rem]">
+                    <div className="relative flex-1">
+                      <Image
+                        src={material.src}
+                        alt={material.alt}
+                        fill
+                        sizes="(min-width: 1024px) 360px, (min-width: 640px) 45vw, 100vw"
+                        className="object-contain"
+                      />
+                    </div>
+                    <h3 className="pt-5 text-center text-lg font-semibold text-navy">
+                      {material.name}
+                    </h3>
+                    <p className="mt-1 text-center text-sm font-medium text-muted-foreground">
+                      {t("viewDetails")}
+                    </p>
+                  </article>
+                </Link>
               </FadeIn>
             ))}
           </div>

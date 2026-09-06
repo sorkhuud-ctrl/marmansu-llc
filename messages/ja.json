@@ -62,6 +62,7 @@
     "description": "モダン歯科診療のための日本のソリューション。",
     "body": "MARMANSUはモンゴルで厳選した日本の歯科材料を供給し、臨床的ニーズと医療機関の要件に応じた専門的な歯科機器の調達をサポートしています。",
     "explore": "歯科ソリューションを見る",
+    "viewDetails": "詳細を見る",
     "featuredMaterials": "厳選された歯科材料",
     "equipment": "歯科機器",
     "equipmentDescription": "臨床的ニーズと医療機関の要件に応じて供給される、専門的な日本の歯科機器。",
@@ -82,6 +83,129 @@
         "title": "AQB用ツール",
         "fullSet": "AQBインプラントツール フルセット",
         "list": "AQBインプラントツール一覧"
+      }
+    }
+  },
+  "dentalProductDetails": {
+    "breadcrumbs": {
+      "products": "製品",
+      "dentalMaterials": "歯科材料"
+    },
+    "backToDentalMaterials": "歯科材料へ戻る",
+    "labels": {
+      "manufacturer": "製造元",
+      "classification": "分類",
+      "packaging": "包装"
+    },
+    "sections": {
+      "composition": "組成",
+      "indications": "適応",
+      "features": "特長・作用",
+      "directions": "使用方法",
+      "precautions": "重要な注意事項"
+    },
+    "vitapex": {
+      "name": "VITAPEX",
+      "imageAlt": "VITAPEX製品",
+      "manufacturer": "Neo Dental Chemical Products Co., Ltd. — J. Morita Corporation",
+      "classification": "水酸化カルシウム・ヨードホルム配合の根管充填用ペースト",
+      "packaging": "2 gシリンジ、ディスポーザブルチップ20本",
+      "composition": {
+        "calciumHydroxide": "水酸化カルシウム（Ca(OH)₂）：30.3%",
+        "iodoform": "ヨードホルム：40.4%",
+        "siliconeOil": "シリコーンオイル：22.4%",
+        "otherIngredients": "その他の不活性成分：6.9%"
+      },
+      "indications": {
+        "rootCanalFilling": "乳歯の抜髄後の根管充填。",
+        "vitalPulpotomy": "乳歯の生活歯髄切断。",
+        "apexification": "根未完成永久歯のアペキシフィケーション。",
+        "activeInfection": "活動性感染時の滲出液の減少、根吸収、歯根破折、根間穿孔などで使用。"
+      },
+      "features": {
+        "highPh": "高いpHが嫌気性菌の産生する毒素を中和します。",
+        "iodoformFeature": "ヨードホルムは静菌作用を有し、X線不透過性を高めます。",
+        "nonSetting": "硬化しないため、必要に応じて次亜塩素酸ナトリウムとファイルで除去できます。"
+      },
+      "directions": {
+        "prepareCanal": "通常の方法で根管を拡大・形成します。",
+        "permanentTeeth": "永久歯では、チップを根尖から2～4 mm離して配置し、注入しながら徐々に引き抜きます。",
+        "deciduousTeeth": "乳歯では、チップを根尖近くまで入れて充填し、ペーストが歯髄腔に達したら停止します。根尖を越えないよう注意してください。",
+        "temporarySeal": "充填後は仮封します。必要に応じて次亜塩素酸ナトリウムとファイルで除去します。"
+      },
+      "precautions": {
+        "disposableTip": "患者ごとに新しいディスポーザブルチップを使用してください。",
+        "overextension": "特に乳歯で根尖を越えて充填すると周囲の軟組織を刺激するおそれがあるため、注意して使用してください。",
+        "professionalUse": "歯科医療従事者専用です。"
+      }
+    },
+    "calcipex-ii": {
+      "name": "CALCIPEX II",
+      "imageAlt": "CALCIPEX II製品",
+      "manufacturer": "Nippon Shika Yakuhin Co., Ltd. — NISHIKA（山口県下関市、日本）",
+      "classification": "水酸化カルシウムをベースとしたX線不透過性ペースト",
+      "packaging": "すぐに使用できる2 gシリンジ、ディスポーザブルチップ20本（Nishika Spin、0.6 mm）",
+      "composition": {
+        "calciumHydroxide": "水酸化カルシウム（Ca(OH)₂）：主な有効成分。",
+        "bariumSulfate": "硫酸バリウム（BaSO₄）：X線不透過性を付与。",
+        "premixedPaste": "練和不要の水性プレミックスペースト。"
+      },
+      "indications": {
+        "pulpCapping": "直接覆髄および間接覆髄。",
+        "rootCanalDisinfection": "根管消毒。",
+        "baseLiner": "一時的なベースまたはライナー材。",
+        "deciduousFilling": "乳歯の根管充填。",
+        "rootCanalMedication": "永久歯の抜髄後における長期根管貼薬。"
+      },
+      "features": {
+        "highPh": "高いpHにより細菌の増殖を抑え、治癒を支えます。",
+        "secondaryDentin": "第二象牙質の形成を促します。",
+        "radiopaque": "X線画像で明瞭に確認できます。",
+        "syringePlacement": "プレミックスのシリンジ包装により、正確で容易な填入が可能です。"
+      },
+      "directions": {
+        "cleanAndDry": "根管を機械的・化学的に清掃し、乾燥させます。",
+        "placePaste": "ディスポーザブルチップを用いて根管に直接、またはレンツロと併用して填入します。",
+        "temporarySeal": "必要に応じて、次の治療段階まで仮封します。"
+      },
+      "precautions": {
+        "allergy": "発疹や皮膚炎など、本製品によるアレルギー反応の既往がある患者には使用しないでください。",
+        "professionalUse": "歯科医療従事者専用です。",
+        "overfilling": "過剰充填により周囲組織に異物反応（肉芽腫）が生じるおそれがあるため、適切な量を使用してください。",
+        "storage": "包装に記載された保存条件および使用期限に従ってください。"
+      }
+    },
+    "periodon": {
+      "name": "PERIODON",
+      "imageAlt": "PERIODON製品",
+      "manufacturer": "Neo Dental Chemical Products Co., Ltd.（日本）",
+      "classification": "根管消毒および残存歯髄の失活処置用薬剤",
+      "packaging": "2 gチューブ",
+      "composition": {
+        "paraformaldehyde": "パラホルムアルデヒド：約50 g/100 g。",
+        "dibucaine": "ジブカイン塩酸塩：約26 g/100 g、局所麻酔成分。",
+        "appearance": "乳白色で粘稠、光沢のあるペースト。"
+      },
+      "indications": {
+        "rootCanalDisinfection": "根管消毒。",
+        "residualPulp": "根管内に残存した歯髄組織の失活。"
+      },
+      "features": {
+        "disinfecting": "パラホルムアルデヒドは強力で持続的な消毒作用を示します。",
+        "localAnesthesia": "ジブカインは局所麻酔作用により、治療後の疼痛を軽減します。",
+        "postPulpectomy": "抜髄後の症状緩和に使用されます。"
+      },
+      "directions": {
+        "amount": "1回の使用量はごま粒の半分程度です。",
+        "cottonFiber": "適量を滅菌綿球に取ります。",
+        "temporarySeal": "根管内に入れ、仮封します。",
+        "maximumSevenDays": "腐食性があるため、根管内には7日を超えて留置しないでください。"
+      },
+      "precautions": {
+        "caustic": "腐食性があるため、口腔粘膜や歯肉組織への接触を避け、ラバーダムを使用してください。",
+        "softTissue": "軟組織に付着した場合は、直ちにエタノール、グリセリン、植物油または水で清拭してください。",
+        "anaphylaxis": "まれにアレルギー性ショックまたはアナフィラキシーが起こる可能性があるため、緊急対応の準備をしてください。",
+        "medicalHistory": "使用前に患者の病歴およびアレルギー歴を十分に確認してください。"
       }
     }
   },
