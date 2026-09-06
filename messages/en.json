@@ -47,7 +47,26 @@
     "explore": "Explore Dental Solutions",
     "featuredMaterials": "Featured dental materials",
     "equipment": "Dental Equipment",
-    "equipmentDescription": "Professional Japanese dental equipment supplied according to clinical and institutional requirements."
+    "equipmentDescription": "Professional Japanese dental equipment supplied according to clinical and institutional requirements.",
+    "aqb": {
+      "title": "AQB Implant System",
+      "lineup": "AQB Implant Lineup",
+      "specifications": {
+        "outerDiameter": "Outer diameter",
+        "outerDiameterOneTwo": "Outer diameter 1 / 2",
+        "coveredPart": "Covered part",
+        "abutment": "Abutment",
+        "overallLength": "Overall length",
+        "collar": "Collar",
+        "span": "Span",
+        "colorSection": "Color section"
+      },
+      "tools": {
+        "title": "AQB Tools",
+        "fullSet": "AQB implant tool full set",
+        "list": "AQB Implant Tools List"
+      }
+    }
   },
   "projects": {
     "label": "PROJECTS & CASE STUDIES",
