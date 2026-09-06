@@ -1,4 +1,4 @@
-import { ArrowLeft, Factory, Package, ShieldAlert } from "lucide-react";
+import { ArrowLeft, Download, Factory, Package, ShieldAlert } from "lucide-react";
 import Image from "@/components/common/Image";
 import { Link } from "@/i18n/routing";
 
@@ -15,6 +15,10 @@ export type DentalMaterialDetailContent = {
   classification: string;
   packagingLabel: string;
   packaging: string;
+  brochureDownload?: {
+    href: string;
+    label: string;
+  };
   sections: {
     title: string;
     items: string[];
@@ -63,6 +67,17 @@ export function DentalMaterialDetail({
           <div>
             <p className="text-sm font-semibold tracking-wide text-primary">{content.classification}</p>
             <h1 className="mt-3 text-3xl font-semibold text-navy sm:text-4xl">{content.name}</h1>
+            {content.brochureDownload ? (
+              <a
+                href={content.brochureDownload.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-flex items-center gap-2 rounded-md border border-primary/30 px-4 py-2 text-sm font-semibold text-primary transition-colors hover:border-primary hover:bg-primary hover:text-white"
+              >
+                <Download className="size-4" aria-hidden="true" />
+                {content.brochureDownload.label}
+              </a>
+            ) : null}
             <dl className="mt-8 grid gap-5 border-t border-border pt-6">
               <div className="flex gap-3">
                 <Factory className="mt-0.5 size-5 shrink-0 text-primary" aria-hidden="true" />
