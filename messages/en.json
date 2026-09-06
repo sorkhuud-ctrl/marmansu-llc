@@ -45,6 +45,7 @@
     "description": "Japanese solutions for modern dental practice.",
     "body": "MARMANSU supplies selected Japanese dental materials in Mongolia and supports the sourcing of professional dental equipment according to clinical and institutional needs.",
     "explore": "Explore Dental Solutions",
+    "viewDetails": "View details",
     "featuredMaterials": "Featured dental materials",
     "equipment": "Dental Equipment",
     "equipmentDescription": "Professional Japanese dental equipment supplied according to clinical and institutional requirements.",
@@ -65,6 +66,129 @@
         "title": "AQB Tools",
         "fullSet": "AQB implant tool full set",
         "list": "AQB Implant Tools List"
+      }
+    }
+  },
+  "dentalProductDetails": {
+    "breadcrumbs": {
+      "products": "Products",
+      "dentalMaterials": "Dental Materials"
+    },
+    "backToDentalMaterials": "Back to Dental Materials",
+    "labels": {
+      "manufacturer": "Manufacturer",
+      "classification": "Classification",
+      "packaging": "Packaging"
+    },
+    "sections": {
+      "composition": "Composition",
+      "indications": "Indications",
+      "features": "Features / Effects",
+      "directions": "Directions for Use",
+      "precautions": "Important Precautions"
+    },
+    "vitapex": {
+      "name": "VITAPEX",
+      "imageAlt": "VITAPEX product",
+      "manufacturer": "Neo Dental Chemical Products Co., Ltd. — J. Morita Corporation",
+      "classification": "Calcium hydroxide and iodoform root canal filling paste",
+      "packaging": "2 g syringe with 20 disposable tips",
+      "composition": {
+        "calciumHydroxide": "Calcium hydroxide (Ca(OH)₂): 30.3%",
+        "iodoform": "Iodoform: 40.4%",
+        "siliconeOil": "Silicone oil: 22.4%",
+        "otherIngredients": "Other inactive ingredients: 6.9%"
+      },
+      "indications": {
+        "rootCanalFilling": "Root canal filling after complete pulpectomy in deciduous teeth.",
+        "vitalPulpotomy": "Vital pulpotomy in deciduous teeth.",
+        "apexification": "Apexification in permanent teeth with an immature apex.",
+        "activeInfection": "Use during active infection, including reduction of exudate, root resorption, root fracture, or inter-root perforation."
+      },
+      "features": {
+        "highPh": "Its high pH neutralizes toxins produced by anaerobic bacteria.",
+        "iodoformFeature": "Iodoform has a bacteriostatic effect and improves radiopacity.",
+        "nonSetting": "The paste does not set and can be removed with sodium hypochlorite and a file when necessary."
+      },
+      "directions": {
+        "prepareCanal": "Enlarge and shape the root canal by the usual method.",
+        "permanentTeeth": "For permanent teeth, position the tip 2–4 mm short of the root apex, inject, and withdraw gradually as filling progresses.",
+        "deciduousTeeth": "For deciduous teeth, fill with the tip close to the root apex and stop when the paste reaches the pulp chamber; avoid extending beyond the root apex.",
+        "temporarySeal": "After filling, close with a temporary seal. Remove with sodium hypochlorite and a file when necessary."
+      },
+      "precautions": {
+        "disposableTip": "Use a new disposable tip for each patient.",
+        "overextension": "Use carefully to avoid overextension, particularly beyond the root apex in deciduous teeth, as this may irritate surrounding soft tissue.",
+        "professionalUse": "For professional dental use only."
+      }
+    },
+    "calcipex-ii": {
+      "name": "CALCIPEX II",
+      "imageAlt": "CALCIPEX II product",
+      "manufacturer": "Nippon Shika Yakuhin Co., Ltd. — NISHIKA (Shimonoseki, Japan)",
+      "classification": "Calcium hydroxide-based, radiopaque paste",
+      "packaging": "Ready-to-use 2 g syringe with 20 disposable tips (Nishika Spin, 0.6 mm)",
+      "composition": {
+        "calciumHydroxide": "Calcium hydroxide (Ca(OH)₂), the principal active ingredient.",
+        "bariumSulfate": "Barium sulfate (BaSO₄), providing radiopacity.",
+        "premixedPaste": "Water-based, premixed paste requiring no mixing."
+      },
+      "indications": {
+        "pulpCapping": "Direct and indirect pulp capping.",
+        "rootCanalDisinfection": "Root canal disinfection.",
+        "baseLiner": "Temporary base or liner material.",
+        "deciduousFilling": "Root canal filling of deciduous teeth.",
+        "rootCanalMedication": "Long-term root canal medication after pulpectomy in permanent teeth."
+      },
+      "features": {
+        "highPh": "Its high pH inhibits bacterial growth and supports healing.",
+        "secondaryDentin": "Promotes secondary dentin formation.",
+        "radiopaque": "Radiopaque for clear visibility on radiographs.",
+        "syringePlacement": "The premixed syringe packaging supports accurate, easy placement."
+      },
+      "directions": {
+        "cleanAndDry": "Clean the root canal mechanically and chemically, then dry it.",
+        "placePaste": "Using a disposable tip, fill the canal directly or together with a lentulo.",
+        "temporarySeal": "If necessary, temporarily seal until the next stage of treatment."
+      },
+      "precautions": {
+        "allergy": "Do not use in patients with a history of allergic reactions to this product, such as rash or skin inflammation.",
+        "professionalUse": "For professional dental use only.",
+        "overfilling": "Overfilling may cause a foreign-body reaction (granuloma) in surrounding tissue; use an appropriate amount.",
+        "storage": "Follow the storage conditions and expiration date shown on the packaging."
+      }
+    },
+    "periodon": {
+      "name": "PERIODON",
+      "imageAlt": "PERIODON product",
+      "manufacturer": "Neo Dental Chemical Products Co., Ltd. (Japan)",
+      "classification": "Root canal disinfecting and residual-pulp mortification treatment agent",
+      "packaging": "2 g tube",
+      "composition": {
+        "paraformaldehyde": "Paraformaldehyde: approximately 50 g per 100 g.",
+        "dibucaine": "Dibucaine hydrochloride: approximately 26 g per 100 g; local anesthetic.",
+        "appearance": "Milky-white, viscous paste with a glossy surface."
+      },
+      "indications": {
+        "rootCanalDisinfection": "Root canal disinfection.",
+        "residualPulp": "Mortification of residual pulp tissue in the root canal."
+      },
+      "features": {
+        "disinfecting": "Paraformaldehyde provides a strong, long-lasting disinfecting effect.",
+        "localAnesthesia": "Dibucaine provides local anesthesia and reduces pain after treatment.",
+        "postPulpectomy": "Used to relieve symptoms after pulpectomy."
+      },
+      "directions": {
+        "amount": "Use an amount approximately equal to half a sesame seed.",
+        "cottonFiber": "Place an appropriate amount on sterilized cotton fiber.",
+        "temporarySeal": "Insert into the root canal and close with a temporary seal.",
+        "maximumSevenDays": "Because of its caustic properties, leave in the root canal for no more than 7 days."
+      },
+      "precautions": {
+        "caustic": "Avoid contact with oral mucosa and gingival tissue because of its caustic properties; use a rubber dam.",
+        "softTissue": "If it contacts soft tissue, immediately clean with ethanol, glycerin, vegetable oil, or water.",
+        "anaphylaxis": "Rarely, allergic shock or anaphylaxis may occur; be prepared to provide emergency assistance.",
+        "medicalHistory": "Before use, carefully ask about the patient’s medical and allergy history."
       }
     }
   },
