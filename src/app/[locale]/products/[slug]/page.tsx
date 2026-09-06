@@ -11,6 +11,7 @@ import { routing } from "@/i18n/routing";
 const productDefinitions = {
   vitapex: {
     image: "/images/vitapex.jpg",
+    brochure: "/downloads/vitapex-mn.pdf",
     sections: {
       composition: ["calciumHydroxide", "iodoform", "siliconeOil", "otherIngredients"],
       indications: ["rootCanalFilling", "vitalPulpotomy", "apexification", "activeInfection"],
@@ -21,6 +22,7 @@ const productDefinitions = {
   },
   "calcipex-ii": {
     image: "/images/calcipex-ii.jpg",
+    brochure: "/downloads/calcipex-ii-mn.pdf",
     sections: {
       composition: ["calciumHydroxide", "bariumSulfate", "premixedPaste"],
       indications: ["pulpCapping", "rootCanalDisinfection", "baseLiner", "deciduousFilling", "rootCanalMedication"],
@@ -31,6 +33,7 @@ const productDefinitions = {
   },
   periodon: {
     image: "/images/periodon-v2.jpg",
+    brochure: "/downloads/periodon-mn.pdf",
     sections: {
       composition: ["paraformaldehyde", "dibucaine", "appearance"],
       indications: ["rootCanalDisinfection", "residualPulp"],
@@ -94,6 +97,13 @@ export default async function DentalMaterialProductPage({
     classification: t(`${slug}.classification`),
     packagingLabel: t("labels.packaging"),
     packaging: t(`${slug}.packaging`),
+    brochureDownload:
+      locale === "mn"
+        ? {
+            href: product.brochure,
+            label: "PDF танилцуулга татах",
+          }
+        : undefined,
     sections,
   };
 
