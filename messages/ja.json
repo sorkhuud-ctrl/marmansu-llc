@@ -64,7 +64,26 @@
     "explore": "歯科ソリューションを見る",
     "featuredMaterials": "厳選された歯科材料",
     "equipment": "歯科機器",
-    "equipmentDescription": "臨床的ニーズと医療機関の要件に応じて供給される、専門的な日本の歯科機器。"
+    "equipmentDescription": "臨床的ニーズと医療機関の要件に応じて供給される、専門的な日本の歯科機器。",
+    "aqb": {
+      "title": "AQB Implant System",
+      "lineup": "AQBインプラント ラインナップ",
+      "specifications": {
+        "outerDiameter": "外径",
+        "outerDiameterOneTwo": "外径 1 / 2",
+        "coveredPart": "被覆部",
+        "abutment": "アバットメント",
+        "overallLength": "全長",
+        "collar": "カラー",
+        "span": "スパン",
+        "colorSection": "カラー部"
+      },
+      "tools": {
+        "title": "AQB用ツール",
+        "fullSet": "AQBインプラントツール フルセット",
+        "list": "AQBインプラントツール一覧"
+      }
+    }
   },
   "projects": {
     "label": "プロジェクト & 事例",

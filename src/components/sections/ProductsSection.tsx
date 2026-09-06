@@ -29,13 +29,9 @@ export function ProductsSection() {
         </FadeIn>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-          {products.map((product, index) => (
-            <FadeIn key={product.key} direction="up" delay={index * 0.05}>
-              <motion.div
-                whileHover={{ y: -4 }}
-                transition={{ duration: 0.25 }}
-                className="bg-secondary rounded-md p-7 hover:bg-white hover:shadow transition-all border border-transparent hover:border-border"
-              >
+          {products.map((product, index) => {
+            const cardContent = (
+              <>
                 <h3 className="text-lg font-semibold text-navy mb-2">
                   {t(`product.${product.key}.title`)}
                 </h3>
@@ -45,9 +41,27 @@ export function ProductsSection() {
                 <span className="text-sm font-medium text-navy">
                   {locale === "mn" || locale === "ja" ? t("products.learnMore") : "Learn more"} →
                 </span>
-              </motion.div>
-            </FadeIn>
-          ))}
+              </>
+            );
+
+            return (
+              <FadeIn key={product.key} direction="up" delay={index * 0.05}>
+                <motion.div
+                  whileHover={{ y: -4 }}
+                  transition={{ duration: 0.25 }}
+                  className="bg-secondary rounded-md p-7 hover:bg-white hover:shadow transition-all border border-transparent hover:border-border"
+                >
+                  {product.key === "dental" ? (
+                    <Link href="/products#dental-materials" className="block">
+                      {cardContent}
+                    </Link>
+                  ) : (
+                    cardContent
+                  )}
+                </motion.div>
+              </FadeIn>
+            );
+          })}
         </div>
       </div>
     </section>
