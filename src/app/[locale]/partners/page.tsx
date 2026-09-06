@@ -10,11 +10,15 @@ const categories = [
     key: "japanese",
     placeholders: ["Welcia Yakkyoku", "J.Morita", "AQB ABI Implant"],
     logos: ["/images/welcia-logo.png", "/images/morita-logo.webp", "/images/aqb-logo.png"],
+    localizedPlaceholders: ["J.Morita Corporation", "Welcia Yakkyoku Co.,Ltd", "AQB ABI IMPLANT Co.Ltd"],
+    localizedLogos: ["/images/morita-logo.webp", "/images/welcia-logo.png", "/images/aqb-logo.png"],
   },
   {
     key: "academic",
     placeholders: ["University Partners", "Medical Associations", "Training Institutes"],
     logos: ["/images/aichi-gakuin-logo.png", "/images/jmdn-logo.png"],
+    localizedPlaceholders: ["University Partners", "Medical Associations"],
+    localizedLogos: undefined,
   },
   {
     key: "mongolian",
@@ -24,6 +28,8 @@ const categories = [
       "/images/mnums-dentistry.jfif",
       "/images/mongolian-dental-association.webp",
     ],
+    localizedPlaceholders: undefined,
+    localizedLogos: undefined,
   },
 ];
 
@@ -62,16 +68,19 @@ export default async function PartnersPage({
                     </p>
                     <div
                       className={
-                        locale === "ja" && category.key === "academic"
+                        category.key === "academic"
                           ? "grid sm:grid-cols-2 gap-4 pt-4 max-w-3xl mx-auto"
                           : "grid sm:grid-cols-2 md:grid-cols-3 gap-4 pt-4"
                       }
                     >
-                      {(locale === "ja" && category.key === "academic"
-                        ? category.placeholders.slice(0, 2)
-                        : category.placeholders
+                      {(locale === "ja"
+                        ? category.placeholders.slice(0, category.key === "academic" ? 2 : undefined)
+                        : category.localizedPlaceholders ?? category.placeholders
                       ).map((placeholder, i) => {
-                        const logoSrc = category.logos[i];
+                        const logoSrc =
+                          locale === "ja"
+                            ? category.logos[i]
+                            : category.localizedLogos?.[i] ?? category.logos[i];
 
                         return <div
                           key={i}
@@ -211,9 +220,15 @@ export default async function PartnersPage({
                                   height={56}
                                   className={
                                     category.key === "japanese" && i === 0
-                                      ? "h-8 w-28 object-contain"
-                                      : category.key === "academic" && i === 0
-                                        ? "h-10 w-10 object-contain"
+                                      ? "h-14 w-full max-w-[240px] object-contain"
+                                      : category.key === "japanese" && i === 1
+                                        ? "h-10 w-full max-w-[180px] object-contain"
+                                        : category.key === "japanese" && i === 2
+                                          ? "h-12 w-full max-w-[210px] object-contain"
+                                          : category.key === "academic" && i === 0
+                                            ? "h-14 w-14 object-contain"
+                                            : category.key === "academic" && i === 1
+                                              ? "h-12 w-full max-w-[220px] object-contain"
                                         : category.key === "mongolian" && i === 2
                                           ? "h-10 w-10 object-contain"
                                           : "h-10 w-full max-w-[150px] object-contain"
