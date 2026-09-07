@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { FadeIn } from "@/components/motion/FadeIn";
 import { SectionHeading } from "@/components/SectionHeading";
 import Image from "@/components/common/Image";
@@ -86,7 +86,14 @@ const aqbTools = [
 ];
 
 export function DentalSolutionsSection() {
+  const locale = useLocale();
   const t = useTranslations("dentalSolutions");
+  const aqbLandingPageCta =
+    locale === "mn"
+      ? "AQB Implant System-ийн талаар дэлгэрэнгүй →"
+      : locale === "ja"
+        ? "AQB Implant Systemについて詳しく見る →"
+        : "Learn more about AQB Implant System →";
 
   return (
     <section
@@ -157,6 +164,12 @@ export function DentalSolutionsSection() {
           <p className="mt-3 text-sm font-semibold text-muted-foreground">
             {t("aqb.lineup")}
           </p>
+          <Link
+            href="/aqb"
+            className="mt-4 inline-flex items-center justify-center rounded bg-navy px-7 py-3.5 text-sm font-medium text-white hover:bg-navy-light transition-colors"
+          >
+            {aqbLandingPageCta}
+          </Link>
 
           <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {aqbImplants.map((implant, index) => (
