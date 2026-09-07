@@ -115,7 +115,7 @@ export function AqbMnHaTechnologySection() {
                 </div>
                 <figcaption className="mt-4 text-center">
                   <p className="text-base font-semibold text-navy">
-                    Дахин талстжуулсан гидроксиапатит (HA) бүрхүүл
+                    AQB Implant-ийн Дахин талстжуулсан гидроксиапатит (HA) бүрхүүл
                   </p>
                   <p className="mt-1 text-sm text-muted-foreground">SEM зураг</p>
                 </figcaption>
