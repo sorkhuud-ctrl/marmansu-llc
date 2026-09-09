@@ -254,6 +254,49 @@ body { background: var(--background); color: var(--foreground); font-family: var
 @media (max-width: 640px) { .aqb-redesign { padding: 0; }.redesign-page { margin-bottom: 0.8rem; min-height: auto; }.redesign-cover { min-height: 45rem; }.redesign-cover-product { right: 4%; width: 50%; }.redesign-cover footer { bottom: 1.5rem; flex-direction: column; gap: 0.45rem; align-items: start; }.redesign-cover footer > span { text-align: left; }.redesign-surface-story { flex-wrap: wrap; }.redesign-process { grid-template-columns: 1fr 1fr; }.redesign-process span:nth-child(2) { border-right: 0; }.redesign-secondary-evidence, .redesign-material-evidence { grid-template-columns: 1fr 1fr; width: 100%; }.redesign-material-evidence .redesign-evidence { display: block; }.redesign-material-evidence .redesign-evidence figcaption { border-left: 0; border-top: 1px solid #d4e0e7; margin-top: 0.25rem; }.redesign-bio-primary, .redesign-bio-support { grid-template-columns: 1fr; }.redesign-bio-support .redesign-evidence { grid-template-columns: 1fr; }.redesign-bio-support .redesign-evidence figcaption { border-left: 0; border-top: 1px solid #d4e0e7; margin-top: 0.25rem; }.redesign-facts, .redesign-pillars { grid-template-columns: 1fr 1fr; }.redesign-facts div:nth-child(2) { border-right: 0; }.redesign-split-heading { grid-template-columns: 1fr; }.redesign-split-heading > div { grid-column: 1; grid-row: auto; margin-top: 0.7rem; }.redesign-comparison > div { grid-template-columns: 1fr 1fr; }.redesign-comparison b { grid-column: 1 / -1; padding-bottom: 0; }.redesign-pillars article:last-child { grid-column: 1 / -1; } }
 @media print { .aqb-redesign { background: #fff; padding: 0; }.redesign-page { box-shadow: none; break-after: page; margin: 0; max-width: none; page-break-after: always; }.redesign-page:last-child { break-after: auto; page-break-after: auto; } }
 
+@media print {
+  .redesign-mongolia {
+    gap: 0.55rem;
+    width: 111.12%;
+    zoom: 0.9;
+  }
+
+  .redesign-mongolia .redesign-mongolia-intro {
+    padding: 0.65rem 0;
+  }
+
+  .redesign-mongolia .redesign-pillars {
+    gap: 0.85rem;
+  }
+
+  .redesign-mongolia-value {
+    margin-top: 0.2rem;
+    padding-top: 0.6rem;
+  }
+
+  .redesign-mongolia-value > div {
+    gap: 0.5rem 0.9rem;
+    margin-top: 0.45rem;
+  }
+
+  .redesign-mongolia-value article {
+    padding-top: 0.35rem;
+  }
+
+  .redesign-mongolia > blockquote {
+    margin-top: 0.45rem;
+  }
+
+  .redesign-mongolia .redesign-mongolia-footer {
+    padding-top: 0.6rem;
+  }
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
 .aqb-redesign .redesign-heading > p,
 .aqb-redesign .redesign-surface-heading > p,
 .aqb-redesign .redesign-technical-evidence > header p,
@@ -790,6 +833,195 @@ body { background: var(--background); color: var(--foreground); font-family: var
   font-size: 0.7rem;
   line-height: 1.35;
   margin-top: 0.25rem;
+}
+
+/* Shared type and page geometry for the approved seven-page AQB brochure. */
+.aqb-redesign {
+  --redesign-body-size: 0.76rem;
+  --redesign-body-leading: 1.46;
+  --redesign-caption-size: 0.6rem;
+  --redesign-caption-leading: 1.28;
+  --redesign-small-heading-size: 0.78rem;
+  --redesign-small-heading-leading: 1.28;
+  --redesign-section-heading-size: 0.94rem;
+  --redesign-section-heading-leading: 1.2;
+}
+
+.aqb-redesign .redesign-heading > span,
+.aqb-redesign .redesign-surface-heading > span,
+.aqb-redesign .redesign-surface-column > header p,
+.aqb-redesign .redesign-surface-summary p,
+.aqb-redesign .redesign-technical-evidence > header span,
+.aqb-redesign .redesign-technical-note,
+.aqb-redesign .redesign-comparison span,
+.aqb-redesign .redesign-comparison strong,
+.aqb-redesign .redesign-practical-benefit p,
+.aqb-redesign .redesign-one-piece-footer p,
+.aqb-redesign .redesign-clinical-case > p,
+.aqb-redesign .redesign-history-phase li p,
+.aqb-redesign .redesign-mongolia-intro span,
+.aqb-redesign .redesign-pillars p,
+.aqb-redesign .redesign-mongolia-value article > p {
+  font-size: var(--redesign-body-size);
+  line-height: var(--redesign-body-leading);
+}
+
+.aqb-redesign .redesign-evidence figcaption,
+.aqb-redesign .redesign-source,
+.aqb-redesign .redesign-case-metadata,
+.aqb-redesign .redesign-history-phase > header span,
+.aqb-redesign .redesign-load-line,
+.aqb-redesign .redesign-structure-visual figure > p,
+.aqb-redesign .redesign-split-heading > div em,
+.aqb-redesign .redesign-surface-support .redesign-evidence figcaption,
+.aqb-redesign .redesign-technical-grid .redesign-evidence figcaption,
+.aqb-redesign .redesign-case-sequence .redesign-evidence figcaption {
+  font-size: var(--redesign-caption-size);
+  line-height: var(--redesign-caption-leading);
+}
+
+.aqb-redesign .redesign-surface-column h3,
+.aqb-redesign .redesign-surface-summary h3,
+.aqb-redesign .redesign-technical-evidence h3,
+.aqb-redesign .redesign-comparison b,
+.aqb-redesign .redesign-practical-benefit h3,
+.aqb-redesign .redesign-clinical-case > header > h3,
+.aqb-redesign .redesign-history-phase > header strong,
+.aqb-redesign .redesign-history-phase li strong,
+.aqb-redesign .redesign-pillars h3,
+.aqb-redesign .redesign-mongolia-value article > strong {
+  font-size: var(--redesign-small-heading-size);
+  line-height: var(--redesign-small-heading-leading);
+}
+
+.aqb-redesign .redesign-heading > p,
+.aqb-redesign .redesign-surface-heading > p,
+.aqb-redesign .redesign-technical-evidence > header p,
+.aqb-redesign .redesign-practical-benefit header > span,
+.aqb-redesign .redesign-clinical-case > header > b,
+.aqb-redesign .redesign-mongolia-value article > b {
+  font-size: var(--redesign-caption-size);
+  line-height: var(--redesign-caption-leading);
+}
+
+.aqb-redesign .redesign-surface-summary h3,
+.aqb-redesign .redesign-technical-evidence h3,
+.aqb-redesign .redesign-practical-benefit h3 {
+  font-size: var(--redesign-section-heading-size);
+  line-height: var(--redesign-section-heading-leading);
+}
+
+.redesign-follow-up-page .redesign-clinical-case > .redesign-case-takeaway,
+.redesign-follow-up-page .redesign-clinical-case > .redesign-case-evidence,
+.redesign-follow-up-page .redesign-case-footer,
+.redesign-history-footer {
+  font-size: var(--redesign-body-size);
+  line-height: var(--redesign-body-leading);
+}
+
+.redesign-follow-up-page {
+  gap: 0.42rem;
+}
+
+.redesign-follow-up-page .redesign-clinical-case + .redesign-clinical-case {
+  margin-top: 2rem;
+}
+
+.redesign-follow-up-page .redesign-clinical-case-primary {
+  margin-top: 0.75rem;
+}
+
+.redesign-follow-up-page .redesign-clinical-case > header > b {
+  align-self: start;
+  background: #164e76;
+  border-radius: 0.1rem;
+  color: #fff;
+  display: block;
+  padding: 0.2rem 0.3rem;
+  text-align: center;
+}
+
+.redesign-follow-up-page .redesign-xrays .redesign-evidence img {
+  max-height: 6rem;
+}
+
+.redesign-follow-up-page .redesign-case-sequence .redesign-evidence img {
+  height: 4.2rem;
+}
+
+.redesign-history-page {
+  gap: 0.6rem;
+}
+
+.redesign-history-phases {
+  gap: 0.7rem;
+}
+
+.redesign-history-phase li {
+  padding-bottom: 0.6rem;
+}
+
+.redesign-biological-page .redesign-technical-grid .redesign-evidence img {
+  height: 4.7rem;
+}
+
+.redesign-mongolia {
+  gap: 0.7rem;
+}
+
+.redesign-mongolia .redesign-mongolia-intro {
+  padding: 0.7rem 0;
+}
+
+.redesign-mongolia .redesign-pillars {
+  gap: 0.9rem;
+}
+
+.redesign-mongolia-value {
+  margin-top: 0.25rem;
+  padding-top: 0.65rem;
+}
+
+.redesign-mongolia-value > div {
+  gap: 0.55rem 1rem;
+  margin-top: 0.5rem;
+}
+
+.redesign-mongolia-value article {
+  padding-top: 0.4rem;
+}
+
+.redesign-mongolia > blockquote {
+  margin-top: 0.5rem;
+}
+
+@media print {
+  .aqb-redesign {
+    background: #fff;
+    padding: 0;
+  }
+
+  .redesign-page {
+    box-shadow: none;
+    break-after: page;
+    height: 297mm;
+    margin: 0;
+    max-width: none;
+    min-height: 297mm;
+    page-break-after: always;
+    padding: 15mm;
+    width: 210mm;
+  }
+
+  .redesign-page:last-child {
+    break-after: auto;
+    page-break-after: auto;
+  }
+
+  .redesign-mongolia {
+    width: 210mm;
+    zoom: normal;
+  }
 }
 
 @media (max-width: 640px) {
