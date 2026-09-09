@@ -173,7 +173,7 @@ export function AqbNominationRedesign() {
 
       <section className="redesign-page redesign-history-page">
         <RunningHead />
-        <header className="redesign-heading"><p>07 / JAPANESE CLINICAL HERITAGE</p><h2>Цаг хугацаагаар батлагдсан итгэл.</h2><span>AQB-ийн 30+ жилийн замнал.</span></header>
+        <header className="redesign-heading"><p>07 / JAPANESE CLINICAL HERITAGE</p><h2>Цаг хугацаагаар батлагдсан технологи.</h2><span>AQB-ийн 30+ жилийн замнал.</span></header>
         <div className="redesign-history-phases">
           {historyPhases.map(({ number, title, range, milestones }) => <section className={`redesign-history-phase redesign-history-phase-${number}`} key={number}>
             <header><b>{number}</b><div><strong>{title}</strong><span>{range}</span></div></header>
