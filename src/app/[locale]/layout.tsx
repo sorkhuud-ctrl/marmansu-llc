@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import ApolloClientProvider from "@/lib/apollo/provider";
+import { AuthProvider } from "@/lib/auth/AuthContext";
 
 import { setRequestLocale } from "next-intl/server";
 import enMessages from "../../../messages/en.json";
@@ -47,7 +48,9 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <ApolloClientProvider>{children}</ApolloClientProvider>
+      <ApolloClientProvider>
+        <AuthProvider>{children}</AuthProvider>
+      </ApolloClientProvider>
     </NextIntlClientProvider>
   );
 }
